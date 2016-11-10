@@ -1,0 +1,8 @@
+p {
+    &:not([class]) {
+        color: $c-black;
+        font-size: 1.8rem;
+        font-weight: 100;
+        line-height: 1.67;
+    }
+}

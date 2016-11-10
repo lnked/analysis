@@ -1,20 +1,27 @@
 .layout-footer {
     clear: both;
-    position: relative;
     height: $footer-height;
+    text-align: center;
+    position: relative;
     margin-top: -$footer-height;
+    background-color: $c-hawkes-blue;
     
     &__wrapper {
         @extend %layout;
     }
 
-    &__copiright {}
+    &__copiright {
+        color: $c-raven;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: $footer-height;
+    }
 
-    &__navigation {
-        &__list {}
-        &__item {
-            &__link {}
-        }
+    &__social {
+        margin-top: -13px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
     }
 }
 

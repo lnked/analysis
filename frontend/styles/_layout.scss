@@ -5,6 +5,10 @@
 
     &__pusher {
         padding-bottom: $footer-height + $footer-margin;
+
+        &._main {
+            padding-top: 100px;
+        }
     }
 
     &__container {

@@ -3,7 +3,7 @@ var app = app || {};
 (function(body){
     "use strict";
 
-    var $body = $(body),
+    var $body = $('body'),
         _this;
 
     app.ajaxForm = {
@@ -338,7 +338,5 @@ var app = app || {};
             this.initLink();
         }
     };
-
-    app.ajaxForm.init();
 
 })(document.body);

@@ -1,0 +1,10 @@
+h1 {
+    &:not([class]) {
+        text-align: center;
+        color: $c-bondi-blue;
+        font-size: 3.6rem;
+        line-height: 1;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+}

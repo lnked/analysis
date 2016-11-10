@@ -1,0 +1,37 @@
+.social {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &__link {
+            width: 27px;
+            height: 27px;
+            display: block;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 27px 27px;
+
+            &._vk {
+                background-image: url(/images/ico/vk.png);
+            }
+
+            &._fb {
+                background-image: url(/images/ico/facebook.png);
+            }
+
+            &._twitter {
+                background-image: url(/images/ico/twitter.png);
+            }
+        }
+    }
+}

@@ -2,6 +2,8 @@
     clear: both;
     position: relative;
     height: $header-height;
+    background-color: #009ead;
+    background-image: linear-gradient(to right, #009ead 0%, #0075ae 100%);
 
     &__wrapper {
         @extend %layout;
@@ -9,8 +11,46 @@
 
     &__logo {
         position: absolute;
-        left: 0;
         top: 0;
+        left: 15px;
+    }
+
+    &__user {
+        color: $c-white;
+        line-height: 48px;
+        position: absolute;
+        top: 0;
+        right: 85px;
+
+        &__name,
+        &__item {
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &__link {
+            color: $c-white;
+            padding-right: 17px;
+            text-decoration: none;
+            display: inline-block;
+            background: url(/images/ico/arrow-right.png) 100% 50% no-repeat;
+        }
+
+        &__item {
+            &:not(:first-child) {
+                margin-left: 45px;
+            }
+        }
+    }
+
+    &__sandwich {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 10;
     }
 }
 

@@ -11,22 +11,62 @@
         "current": "index"
     })
 
-    <div class="layout-wrapper__pusher">
+    <div class="layout-wrapper__pusher _main">
 
         <div class="layout-wrapper__container clearfix">
 
-            @@include('./components/_sidebar.html')
-            
             <div class="content clearfix">
                 
-                @@include('./components/_breadcrumbs.html', {
-                    "page1": "Главная",
-                    "page2": "",
-                    "page3": ""
-                })
+                <h1>Для чего нужен наш ресурс</h1>
+                <p>На нашем сайте Вы найдете большую базу данных обо всех стройках в указанном регионе. Процесс строительства включает в себя все организационные, изыскательские, проектные, строительно-монтажные и пусконаладочные работы, связанные с созданием, изменением или сносом объекта, а также взаимодействие с компетентными органами по поводу производства таких работ.</p>
+                
+                <ul class="sections">
+                    <li class="sections__item">
+                        <a href="/markup/objects.html" class="sections__link">
+                            <span class="sections__link__ico">
+                                <img src="/images/ico/objects.png" alt="" class="sections__link__ico__src">
+                            </span>
+                            <span class="sections__link__title">Объекты<br>строительства<br><span class="sections__link__count">(3489)</span></span>
+                        </a>
 
-                <h1></h1>
+                        <a href="" class="sections__item__add"></a>
+                    </li>
+                    <li class="sections__item">
+                        <a href="/markup/participants.html" class="sections__link">
+                            <span class="sections__link__ico">
+                                <img src="/images/ico/participants.png" alt="" class="sections__link__ico__src">
+                            </span>
+                            <span class="sections__link__title">участники<br>строительства<br><span class="sections__link__count">(1489)</span></span>
+                        </a>
 
+                        <a href="" class="sections__item__add"></a>
+                    </li>
+                    <li class="sections__item">
+                        <a href="/markup/map.html" class="sections__link">
+                            <span class="sections__link__ico">
+                                <img src="/images/ico/map.png" alt="" class="sections__link__ico__src">
+                            </span>
+                            <span class="sections__link__title">карта<br>объектов</span>
+                        </a>
+                    </li>
+                    <li class="sections__item">
+                        <a href="/markup/forum.html" class="sections__link">
+                            <span class="sections__link__ico">
+                                <img src="/images/ico/forum.png" alt="" class="sections__link__ico__src">
+                            </span>
+                            <span class="sections__link__title">форум</span>
+                        </a>
+                    </li>
+                    <li class="sections__item">
+                        <a href="/markup/assistant.html" class="sections__link">
+                            <span class="sections__link__ico">
+                                <img src="/images/ico/assistant.png" alt="" class="sections__link__ico__src">
+                            </span>
+                            <span class="sections__link__title">Личный<br>помощник</span>
+                        </a>
+                    </li>
+                </ul>
+                
             </div>
             
         </div>

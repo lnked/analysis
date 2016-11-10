@@ -1,0 +1,28 @@
+.logo {
+    line-height: 1;
+    text-decoration: none;
+
+    &__name {
+        display: block;
+        font-size: 3.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        
+        &__blue {
+            color: $c-blizzard-blue;
+        }
+
+        &__white {
+            color: $c-white;
+        }
+    }
+
+    &__description {
+        color: $c-white;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.06ex;
+    }
+}
