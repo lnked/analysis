@@ -10,8 +10,46 @@ $font-arial:                    Arial, Helvetica, sans-serif;
 $font-forms:                    Arial, Helvetica, sans-serif;
 
 // Colors
-$c-select-color:                #f00;
-$c-select-background:           #000;
+$c-border-color:                #eee;
+
+$c-lime:                        lime;
+$c-white:                       #fff;
+$c-black:                       #000;
+$c-green:                       #00f;
+$c-whisper:                     #e7e7e7;
+$c-raven:                       #6a7582;
+$c-hawkes-blue:                 #d7dde4;
+$c-bondi-blue:                  #009ead;
+$c-lavender:                    #f0f0f2;
+$c-very-light-grey:             #c8c8c8;
+$c-pink-swan:                   #b4b4b4;
+$c-cerulean:                    #0075ae;
+$c-solitude:                    #f5f6f8;
+$c-link-water:                  #cdd6df;
+$c-solitude-light:              #ebeef1;
+$c-valencia:                    #d15050;
+$c-eclipse:                     #393939;
+
+$c-jordy-blue:                  #7baaf7;
+$c-maya-blue:                   #76b5ff;
+$c-hawkes-blue:                 #d4e4f8;
+$c-blizzard-blue:               #96e0eb;
+$c-ultramarine-blue:            #5477f7;
+
+$c-electric-indigo:             #6100ea;
+
+$c-silver-tree:                 #57bb8a;
+$c-geraldine:                   #e67c73;
+$c-kournikova:                  #f7cb4d;
+$c-night-rider:                 #323232;
+$c-royal-blue:                  #3367d6;
+$c-salem:                       #0b8043;
+$c-rersian-red:                 #c53929;
+$c-persimmon:                   #ea6100;
+
+// 
+$c-select-color:                #0075ae;
+$c-select-background:           #ebeef1;
 
 $c-text-color:                  #121212;
 $c-body-background:             #fff !default;
@@ -21,38 +59,7 @@ $c-placeholder-opacity:         .5;
 
 $c-sandwich-overlay:            #000;
 $c-sandwich-background:         #fff;
-$c-sandwich-background-active:  #fff;
-
-$c-border-color:                #eee;
-
-$c-lime:                        lime;
-$c-white:                       #fff;
-$c-black:                       #000;
-$c-green:                       #00f;
-$c-whisper:                     #E7E7E7;
-$c-raven:                       #6a7582;
-$c-hawkes-blue:                 #d7dde4;
-$c-bondi-blue:                  #009EAD;
-$c-lavender:                    #f0f0f2;
-$c-very-light-grey:             #c8c8c8;
-$c-pink-swan:                   #B4B4B4;
-
-$c-jordy-blue:                  #7baaf7;
-$c-maya-blue:                   #76B5FF;
-$c-hawkes-blue:                 #d4e4f8;
-$c-blizzard-blue:               #96e0eb;
-$c-ultramarine-blue:            #5477F7;
-
-$c-electric-indigo:             #6100EA;
-
-$c-silver-tree:                 #57BB8A;
-$c-geraldine:                   #e67c73;
-$c-kournikova:                  #f7cb4d;
-$c-night-rider:                 #323232;
-$c-royal-blue:                  #3367d6;
-$c-salem:                       #0b8043;
-$c-rersian-red:                 #c53929;
-$c-persimmon:                   #ea6100;
+$c-sandwich-background-active:  $c-cerulean;
 
 // Alerts
 

@@ -10,9 +10,10 @@
 		
 		<nav class="navigation" id="navigation" role="navigation">
 			<div class="navigation__wrapper">
-				<!-- 
+				
+				@@if (typeof navigation !== 'undefined' && navigation == true) {
 				<ul class="navigation__list">
-				    
+
 				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
 				    	<a href="/markup/objects.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
 				    		<span class="navigation__link__name" itemprop="name">ОБЪЕКТЫ</span>
@@ -44,24 +45,43 @@
 			    	</li>
 
 				</ul>
-				-->
+				}
+
 			</div>
 		</nav>
 		
+		@@if (typeof navigation == 'undefined' || navigation !== true) {
 		<ul class="layout-header__user">
 			<li class="layout-header__user__item"><a href="" class="layout-header__user__link">Войти</a></li>
 			<li class="layout-header__user__item"><a href="" class="layout-header__user__link">Зарегистрироваться</a></li>
 		</ul>
-		
-		<!--
-		<div class="layout-header__user">
-			<span class="layout-header__user__name">Приветствуем, admin</span>
-		</div>
- 		-->
+		}
 
-		<span class="layout-header__sandwich sandwich js-sandwich-menu">
-			<span class="sandwich__layer">Menu</span>
-		</span>
+		@@if (typeof navigation !== 'undefined' && navigation == true) {
+		<div class="layout-header__user">
+			<span class="layout-header__user__name">Приветствуем, Анатолий</span>
+		</div>
+		}
+	
+		<div class="layout-header__dropdown dropdown j-dropdown">
+			<div class="dropdown__sandwich">
+				<span class="sandwich j-dropdown-trigger">
+					<span class="sandwich__layer"></span>
+				</span>
+			</div>
+
+			<div class="dropdown__menu">
+				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
+				<div class="dropdown__item"><a href="" class="dropdown__item__link">Изменить личные данные</a></div>
+				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Сменить пароль</a></div>
+				<div class="dropdown__item"><a href="" class="dropdown__item__link is-red">Удалить аккаунт</a></div>
+				<div class="dropdown__item">
+					<a href="" class="dropdown__item__link is-gray">
+						<span class="dropdown__item__ico _logout">Выход</span>
+					</a>
+				</div>
+			</div>
+		</div>
 
 	</div>
 </header>

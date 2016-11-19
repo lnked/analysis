@@ -1,31 +1,19 @@
-.menu-overlay {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 8888;
-    visibility: hidden;
-    opacity: 0;
-    background-color: $c-sandwich-overlay;
-    transform: scale(0.5, 0.5);
-    transition: opacity .6s, transform .3s;
-}
-
 .sandwich {
     width: 32px;
-    height: 22px;
+    height: 25px;
     cursor: pointer;
+    line-height: 1;
+    position: relative;
     text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
 
     &__layer {
         width: 100%;
         max-width: 32px;
         height: 5px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -16px;
+        top: 10px;
         margin-top: 0;
         font-size: 0;
         display: block;
@@ -65,41 +53,11 @@
     }
 }
 
-.page-visible {
-    .header {
-        visibility: visible;
-    }
-
-    .navigation {
-        visibility: visible;
-    }
-}
-
-.page-open {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-
-    .layout-wrapper {
-        overflow: hidden;
-    }
-
-    .menu-overlay {
-        transform: scale(1, 1);
-        opacity: .9;
-    }
-    
-    .navigation {
-        &__list {
-            transform: scale(1, 1);
-        }
-    }
-
+.is-open {
     .sandwich {
         &__layer {
             background-color: transparent;
-    
+
             &:before, &:after {
                 background-color: $c-sandwich-background-active !important;
             }

@@ -1,0 +1,58 @@
+.tabs {
+    clear: both;
+    font-size: 0;
+    text-align: left;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $c-cerulean;
+
+    &._margin {
+        margin-bottom: 15px;
+    }
+
+    &._no-margin {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: -2px;
+
+        &:not(:first-child) &__link {
+            margin-left: -2px;
+        }
+        
+        &__link {
+            width: 220px;
+            height: 51px;
+            display: block;
+            color: $c-cerulean;
+            padding: 0 10px;
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 47px;
+            text-align: center;
+            text-decoration: none;
+            transition: color $a-time;
+            background-color: transparent;
+            border: 2px solid $c-cerulean;
+
+            &:hover {
+                color: $c-raven;
+                border-color: $c-raven;
+            }
+
+            &.is-current {
+                color: $c-white;
+                cursor: default;
+                border: 0;
+                margin-left: 0 !important;
+                border-color: $c-hawkes-blue;
+                text-decoration: none;
+                background-color: $c-hawkes-blue;
+                background-image: linear-gradient(to right, $c-bondi-blue 0%, $c-cerulean 100%);
+            }
+        }
+    }
+}

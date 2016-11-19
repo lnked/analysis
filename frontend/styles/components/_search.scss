@@ -1,0 +1,98 @@
+.search {
+    height: 6.4rem;
+    font-size: 0;
+    position: relative;
+    line-height: 64px;
+    text-align: center;
+    background-color: $c-solitude;
+
+    &__wrapper {
+        @extend %layout;
+    }
+ 
+    &__extended {
+        color: $c-black;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+
+        &:after {
+            width: 108px;
+            height: 25px;
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 63px;
+            margin-left: -54px;
+            background: url(/images/extended.png) 50% 100% no-repeat;
+        }
+    }
+
+    &__form {
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &__control, &__button {
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &__control {
+            width: 260px;
+            padding-left: 42px;
+            position: relative;
+            background-color: $c-white;
+            border: 1px solid $c-link-water;
+
+            &:before {
+                content: "";
+                width: 42px;
+                height: 42px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: $c-solitude-light url(/images/ico/search.png) 50% 50% no-repeat;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            height: 42px;
+            outline: none;
+            padding: 0 11px;
+            color: $c-raven;
+            border: 0;
+            font-family: $font-family;
+            font-size: 1.5rem;
+            font-weight: 300;
+
+            &:placeholder {
+                color: $c-raven;
+                opacity: 1;
+                transition: opacity $a-time ease;
+            }
+
+            &:focus {
+            &:placeholder {
+                color: transparent;
+                opacity: 0;
+            }
+            }
+
+            &:placeholder, &[placeholder] {
+                text-overflow: ellipsis;
+            }
+        }
+
+        &__button {
+            width: 101px;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+
+<div class="layout-wrapper">
+
+    @@include('./components/_header.html', {
+        "current": "index",
+        "navigation": true
+    })
+
+    @@include('./components/_search.html')
+
+    <div class="layout-wrapper__pusher">
+
+        <div class="layout-wrapper__container clearfix">
+
+            <div class="content clearfix">
+
+                <h2>Перечень объектов строительства</h2>
+                <p>Всего найдено <span class="bondi-blue">3458</span> объектов</p>
+
+                <ul class="tabs">
+                    <li class="tabs__item"><a href="" class="tabs__item__link">Блочный вид</a></li>
+                    <li class="tabs__item"><a href="" class="tabs__item__link is-current">Расположение на карте</a></li>
+                    <li class="tabs__item"><a href="" class="tabs__item__link">Табличный вид</a></li>
+                </ul>
+                
+                <div class="tabs-content">
+                    
+                    
+                    <div class="next-page">
+                        <a href="" class="next-page__link">Следующая страница</a>
+                    </div>
+                    
+                    @@include('./components/_pagination.html')
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

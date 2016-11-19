@@ -8,3 +8,17 @@ h1 {
         margin-bottom: 25px;
     }
 }
+
+h2 {
+    &:not([class]) {
+        color: $c-eclipse;
+        font-size: 3.6rem;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+}
+
+.bondi-blue {
+    color: $c-bondi-blue;
+}

@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <!-- (c) lnk. CELEBRO Studio | http://celebro.ru -->
 <html lang="ru" class="no-js" itemscope="itemscope" xmlns="http://www.w3.org/1999/xhtml" itemtype="http://schema.org/WebPage">
-
-<head>
-    <link rel="stylesheet" href="/css/main.min.css" media="none" onload="if(media!='all')media='all'">
-    <noscript>
-        <link rel="stylesheet" href="/css/main.min.css">
-    </noscript>
+<head> 
+    <link rel="stylesheet" href="/css/main.min.css">
 
     <meta charset="UTF-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
@@ -18,176 +14,154 @@
     <meta content="email=no" name="format-detection">
     <meta content="address=no" name="format-detection">
     <meta content="telephone=no" name="format-detection">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#11859f">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <!--[if IEMobile]>
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
     <![endif]-->
 
-    <script>
-        (function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);
-    </script>
-    <script>
-        if (window.jQuery === undefined){window.jQueryReadyHandlers = [];window.$ = window.jQuery = function(cb){window.jQueryReadyHandlers.push(cb);return window.$;};window.$.ready = window.$;}
-    </script>
+    <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+    <script>if (window.jQuery === undefined){window.jQueryReadyHandlers = [];window.$ = window.jQuery = function(cb){window.jQueryReadyHandlers.push(cb);return window.$;};window.$.ready = window.$;}</script>
     <title itemprop="name">Index</title>
 </head>
-
 <body>
 
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <defs>
-            <!-- inject:svg -->
-            <!-- endinject -->
-        </defs>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs><!-- inject:svg --><!-- endinject --></defs>
+</svg>
 
-    <div class="layout-wrapper">
+<div class="layout-wrapper">
 
-        <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="menu-overlay" id="menu-overlay"></div>
 
-        <header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-            <div class="layout-header__wrapper">
+<header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="layout-header__wrapper">
+		
+		<a href="/markup/index.html" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
+			<span class="logo__name" itemprop="name"><span class="logo__name__blue">Анализ</span> <span class="logo__name__white">строек</span></span>
+			<span class="logo__description">База данных строительных объектов</span>
+		</a>
+		
+		<nav class="navigation" id="navigation" role="navigation">
+			<div class="navigation__wrapper">
+				
+				
 
-                <a href="/markup/index.html" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
-                    <span class="logo__name" itemprop="name">
-                        <span class="logo__name__blue">Анализ</span>
-                        <span class="logo__name__white">строек</span>
-                    </span>
-                    <span class="logo__description">База данных строительных объектов</span>
-                </a>
+			</div>
+		</nav>
+		
+		
+		<ul class="layout-header__user">
+			<li class="layout-header__user__item"><a href="" class="layout-header__user__link">Войти</a></li>
+			<li class="layout-header__user__item"><a href="" class="layout-header__user__link">Зарегистрироваться</a></li>
+		</ul>
+		
 
-                <nav class="navigation" id="navigation" role="navigation">
-                    <div class="navigation__wrapper">
-                        <!-- 
-				<ul class="navigation__list">
-				    
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/objects.html" itemprop="url" class="navigation__link _current">
-				    		<span class="navigation__link__name" itemprop="name">ОБЪЕКТЫ</span>
-				    	</a>
-			    	</li>
+		
+	
+		<div class="layout-header__dropdown dropdown j-dropdown">
+			<div class="dropdown__sandwich">
+				<span class="sandwich j-dropdown-trigger">
+					<span class="sandwich__layer"></span>
+				</span>
+			</div>
 
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/participants.html" itemprop="url" class="navigation__link _current">
-				    		<span class="navigation__link__name" itemprop="name">УЧАСТНИКИ</span>
-				    	</a>
-			    	</li>
-
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/map.html" itemprop="url" class="navigation__link _current">
-				    		<span class="navigation__link__name" itemprop="name">КАРТА</span>
-				    	</a>
-			    	</li>
-
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/forum.html" itemprop="url" class="navigation__link _current">
-				    		<span class="navigation__link__name" itemprop="name">ФОРУМ</span>
-				    	</a>
-			    	</li>
-
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/assistant.html" itemprop="url" class="navigation__link _current">
-				    		<span class="navigation__link__name" itemprop="name">ПОМОЩНИК</span>
-				    	</a>
-			    	</li>
-
-				</ul>
-				-->
-                    </div>
-                </nav>
-
-                <ul class="layout-header__user">
-                    <li class="layout-header__user__item">
-                        <a href="" class="layout-header__user__link">Войти</a>
-                    </li>
-                    <li class="layout-header__user__item">
-                        <a href="" class="layout-header__user__link">Зарегистрироваться</a>
-                    </li>
-                </ul>
-
-                <!--
-		<div class="layout-header__user">
-			<span class="layout-header__user__name">Приветствуем, admin</span>
+			<div class="dropdown__menu">
+				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
+				<div class="dropdown__item"><a href="" class="dropdown__item__link">Изменить личные данные</a></div>
+				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Сменить пароль</a></div>
+				<div class="dropdown__item"><a href="" class="dropdown__item__link is-red">Удалить аккаунт</a></div>
+				<div class="dropdown__item">
+					<a href="" class="dropdown__item__link is-gray">
+						<span class="dropdown__item__ico _logout">Выход</span>
+					</a>
+				</div>
+			</div>
 		</div>
- 		-->
 
-                <span class="layout-header__sandwich sandwich js-sandwich-menu">
-                    <span class="sandwich__layer">Menu</span>
-                </span>
+	</div>
+</header>
+
+    <div class="layout-wrapper__pusher">
+
+        <div class="layout-wrapper__container clearfix">
+
+            <aside class="sidebar" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+    <div class="sidebar__trigger j-sidebar-trigger">
+        <div class="sidebar__trigger__hamburger"></div>
+    </div>
+
+    <div class="sidebar__container j-sidebar-content">
+        Персональные данные
+
+        отслеживаемые объекты
+
+        Заявка на закрепление к объекту
+
+        Изменение пароля
+
+        Удаление аккаунта
+    </div>
+</aside>
+            
+            <div class="content clearfix">
+                
+                <nav class="breadcrumbs clearfix">
+    <ol class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+        
+        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">Главная</span></a>
+            <meta itemprop="position" content="1" />
+        </li>
+        
+
+        
+
+        
+    </ol>
+</nav>
+
+                <h1></h1>
 
             </div>
-        </header>
-
-        <div class="layout-wrapper__pusher">
-
-            <div class="layout-wrapper__container clearfix">
-
-                <aside class="sidebar" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-                    <div class="sidebar__trigger j-sidebar-trigger">
-                        <div class="sidebar__trigger__hamburger"></div>
-                    </div>
-
-                    <div class="sidebar__container j-sidebar-content">
-                        Персональные данные отслеживаемые объекты Заявка на закрепление к объекту Изменение пароля Удаление аккаунта
-                    </div>
-                </aside>
-
-                <div class="content clearfix">
-
-                    <nav class="breadcrumbs clearfix">
-                        <ol class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
-
-                            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                <a href="#" itemprop="item" class="breadcrumbs__item__link">
-                                    <span itemprop="name">Главная</span>
-                                </a>
-                                <meta itemprop="position" content="1" />
-                            </li>
-
-                        </ol>
-                    </nav>
-
-                    <h1></h1>
-
-                </div>
-
-            </div>
-
+            
         </div>
 
     </div>
 
-    <footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-        <div class="layout-footer__wrapper">
+</div>
 
-            <div class="layout-footer__copiright">© 2016 Анализ Строек</div>
-
-            <nav class="layout-footer__social">
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="" class="social__item__link _vk"></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__item__link _fb"></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__item__link _twitter"></a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-    </footer>
-    <!--
-<script src="/js/vendor.min.js"></script>
+<footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class="layout-footer__wrapper">
+		
+		<div class="layout-footer__copiright">© 2016 Анализ Строек</div>
+		
+		<nav class="layout-footer__social">
+			<ul class="social">
+				<li class="social__item"><a href="" class="social__item__link _vk"></a></li>
+				<li class="social__item"><a href="" class="social__item__link _fb"></a></li>
+				<li class="social__item"><a href="" class="social__item__link _twitter"></a></li>
+			</ul>
+		</nav>
+		
+	</div>
+</footer>
+<script src="/js/vendors.min.js"></script>
 <script src="/js/app.min.js"></script>
--->
 
-    <!--[if lt IE 9]>
+
+<!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
 <![endif]-->
 
 </body>
-
 </html>

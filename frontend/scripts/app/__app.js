@@ -6,6 +6,7 @@ var app = app || {};
     app = {
         
         init: function() {
+            this.dropdown.init();
             // this.map.init();
             // this.faq.init();
             // this.faq.morph();
