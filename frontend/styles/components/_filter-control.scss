@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    
+
     &__header {
         clear: both;
         height: 31px;
@@ -20,6 +20,7 @@
         font-size: 1.5rem;
         font-weight: 300;
         line-height: 0.9;
+        user-select: none;
         display: inline-block;
         vertical-align: middle;
     }
@@ -27,15 +28,20 @@
     &__remove {
         width: 16px;
         height: 16px;
-        display: block;
+        opacity: 0;
         position: absolute;
         right: 3px;
         top: 50%;
         cursor: pointer;
         margin-top: -8px;
+        transition: opacity $a-time ease;
         background: url(/images/ico/remove.png) 50% 50% no-repeat;
     }
 
+    &.is-checked &__remove {
+        opacity: 1;
+    }
+    
     &__dropdown {
         width: 100%;
         margin-top: 5px;
@@ -43,7 +49,22 @@
         position: absolute;
         left: 0;
         top: 100%;
-        border: 1px solid red;
+        z-index: 100;
+        opacity: 0;
+        display: none;
+        transform: translateY(-15px);
+        backface-visibility: hidden;
+        transition: transform $a-time linear, opacity $a-time ease;
+
+        &.is-open {
+            display: block;
+        }
+
+        &.is-animate {
+            opacity: 1;
+            transform: translateZ(0);
+            transform: translateY(0);
+        }
         
         &:before {
             width: 10px;

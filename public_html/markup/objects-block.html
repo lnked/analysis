@@ -124,12 +124,12 @@
 	</div>
 </header>
 
-    <div class="search is-open">
-    <div class="search__toggle"></div>
+    <div class="search j-swith">
+    <div class="search__toggle j-swith-trigger"></div>
 
     <header class="search__header">
         <div class="search__wrapper">
-            <a href="" class="search__extended">Открыть расширенный поиск</a>
+            <a href="" class="search__extended j-swith-trigger">Открыть расширенный поиск</a>
 
             <form action="" class="search__form clearfix">
                 <div class="search__form__control">
@@ -143,113 +143,140 @@
         </div>
     </header>
 
-    <div class="search__filter">
+    <form action="" method="GET" class="search__filter">
         <div class="search__wrapper">
             <section class="search__filter__content">
 
                 <div class="search__filter__title">Выберите нужные фильтры для генерации результатов поиска</div>
                 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Населенный пункт
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Краснодар</div>
+                            <div class="filter-item">Сочи</div>
+                            <div class="filter-item">Туапсе</div>
+                            <div class="filter-item">Славянск-на-Кубани</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Район
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Центральный район</div>
+                            <div class="filter-item">Адлерский район</div>
+                            <div class="filter-item">Хостинский район</div>
+                            <div class="filter-item">Лазаревский район</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Вид объекта
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Жилая недвижимость</div>
+                            <div class="filter-item">Коммерческая недвижимость</div>
+                            <div class="filter-item">Общественные (специальные) здания и сооружения</div>
+                            <div class="filter-item">Инженерные сооружения</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Тип объекта
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Монолитные железобетонные конструкции</div>
+                            <div class="filter-item">Сборные железобетонные конструкции и изделия</div>
+                            <div class="filter-item">Сборно-монолитные железобетонные конструкции</div>
+                            <div class="filter-item">Стальные конструкции</div>
+                            <div class="filter-item">Другие конструкции</div>
+                            <div class="filter-item">Каменные конструкции</div>
+                            <div class="filter-item">Деревянные конструкции</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Стадия строительства
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Ожидается</div>
+                            <div class="filter-item">Подготовка строительства</div>
+                            <div class="filter-item">Нулевой цикл</div>
+                            <div class="filter-item">Основной цикл</div>
+                            <div class="filter-item">Оформление и отделка фасадов</div>
+                            <div class="filter-item">Внутренние работы</div>
+                            <div class="filter-item">Завершающий этап</div>
+                            <div class="filter-item">Дом сдан</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Активность объекта
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Ведутся работы</div>
+                            <div class="filter-item">Работы на объекте приостановлены</div>
+                            <div class="filter-item">Объект заморожен</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="search__filter__control">
-                    <div class="filter-control j-filter">
+                    <div class="filter-control is-checked j-filter">
                         <div class="filter-control__header j-filter-trigger">
-                            <span class="filter-control__label">
+                            <span class="filter-control__label j-filter-value">
                                 Статус объекта
                             </span>
-                            <span class="filter-control__remove"></span>
+                            <span class="filter-control__remove j-filter-clear"></span>
                         </div>
 
                         <div class="filter-control__dropdown j-filter-dropdown">
-                            
+                            <div class="filter-item">Новые</div>
+                            <div class="filter-item">Обновленные</div>
+                            <div class="filter-item">Избранное</div>
+                            <div class="filter-item">Сдан</div>
                         </div>
                     </div>
                 </div>
@@ -260,7 +287,7 @@
                 <button type="reset" class="button is-border">СБРОС</button>
             </footer>
         </div>
-    </div>
+    </form>
 </div>
 
     <div class="layout-wrapper__pusher">

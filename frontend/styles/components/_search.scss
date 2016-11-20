@@ -16,6 +16,9 @@
 
     &__filter {
         display: none;
+        opacity: 0;
+        max-height: 0;
+        transition: all $a-time ease;
 
         &__content {
             text-align: left;
@@ -61,6 +64,7 @@
         text-decoration: none;
         display: inline-block;
         vertical-align: middle;
+        transition: opacity $a-time;
     }
 
     &__toggle {
@@ -96,7 +100,7 @@
             background-position: 50% 0;
         }
     }
-    
+
     &.is-open &__toggle {
         &:before {
             opacity: 0;
@@ -107,12 +111,21 @@
         }
     }
 
+    &.is-open &__extended {
+        opacity: 0;
+    }
+
+    &.is-animate &__extended {
+        display: none;
+    }
+
     &.is-open &__filter {
         display: block;
     }
     
-    &.is-open &__extended {
-        display: none;
+    &.is-animate &__filter {
+        opacity: 1;
+        max-height: 1000px;
     }
 
     &__form {

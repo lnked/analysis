@@ -8,6 +8,7 @@ var app = app || {};
         init: function()
         {
             this.tabs.init();
+            this.swith.init();
             this.filter.init();
             this.dropdown.init();
 
