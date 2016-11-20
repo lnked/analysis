@@ -22,7 +22,7 @@
         overflow: hidden;
         user-select: none;
         background: $c-white;
-        border: 1px solid $c-gray;
+        border: 1px solid #f00;
 
         &:before {
             width: 100%;
@@ -39,7 +39,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        color: $c-matterhorn;
+        color: #f00;
         padding: 0 15px;
         font-size: 1.5rem;
         font-weight: 400;

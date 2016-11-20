@@ -1,4 +1,4 @@
-$checkbox-size: 18px;
+$checkbox-size: 24px;
 
 .f-checkbox {
     clear: both;
@@ -8,6 +8,7 @@ $checkbox-size: 18px;
     display: block;
     position: relative;
     font-size: 0;
+    user-select: none;
     
     &__input {
         width: 0;
@@ -27,22 +28,24 @@ $checkbox-size: 18px;
         user-select: none;
         background: $c-white;
         box-sizing: border-box;
-        border: 1px solid $c-nobel;
+        border: 2px solid $c-rock-blue;
         margin-right: -$checkbox-size;
+        transition: border-color $a-time;
 
         &:before {
-            width: 7px;
-            height: 3px;
+            width: 14px;
+            height: 9px;
             content: "";
-            display: none;
+            opacity: 0;
             position: absolute;
-            left: 4px;
-            top: 4px;
+            left: 5px;
+            top: 5px;
             border-image: none;
             border-color: $c-green;
             border-style: solid;
             border-width: 0 0 3px 3px;
             transform: rotate(-45deg);
+            transition: opacity $a-time;
         }
     }
 
@@ -50,19 +53,29 @@ $checkbox-size: 18px;
         width: 100%;
         float: left;
         display: block;
-        color: $c-matterhorn;
+        color: $c-white;
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 700;
         line-height: $checkbox-size;
-        font-weight: 400;
-        padding-left: 25px;
+        padding-left: 26px;
         letter-spacing: 0.01ex;
+        text-transform: uppercase;
 
         &__middle {
-            margin-top: -1px;
-            line-height: 1.3;
+            padding: 0 5px;
+            line-height: 24px;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: top;
+            background-color: $c-rock-blue;
+            transition: background-color $a-time;
+
+            &__title {
+                display: block;
+            }
+
+            &__alter {
+                display: none;
+            }
         }
     }
 
@@ -70,7 +83,21 @@ $checkbox-size: 18px;
         border-color: $c-green;
 
         &:before {
-            display: block;
+            opacity: 1;
+        }
+    }
+
+    &__input:checked + &__visible + &__label {
+        .f-checkbox__label__middle {
+            background-color: $c-green;
+            
+            &__title {
+                display: none;
+            }
+
+            &__alter {
+                display: block;
+            }
         }
     }
 }
