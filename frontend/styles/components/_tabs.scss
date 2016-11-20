@@ -17,9 +17,10 @@
         position: relative;
         display: inline-block;
         vertical-align: bottom;
+        z-index: 1;
         margin-bottom: -2px;
 
-        &:not(:first-child) &__link {
+        &:not(:first-child) {
             margin-left: -2px;
         }
         
@@ -54,5 +55,13 @@
                 background-image: linear-gradient(to right, $c-bondi-blue 0%, $c-cerulean 100%);
             }
         }
+    }
+}
+
+.tabs-content {
+    display: none;
+
+    &.is-open {
+        display: block;
     }
 }

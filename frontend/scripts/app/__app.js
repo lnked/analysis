@@ -5,10 +5,12 @@ var app = app || {};
 
     app = {
         
-        init: function() {
+        init: function()
+        {
+            this.tabs.init();
             this.dropdown.init();
+
             // this.map.init();
-            // this.faq.init();
             // this.faq.morph();
             // this.fixmenu.init();
             // this.ajaxForm.init();

@@ -11,16 +11,17 @@ var app = app || {};
             $('body').on('click', '.j-tab-trigger', function(e){
                 e.preventDefault();
 
-                if (!$(this).hasClass('_open')) {
+                if (!$(this).hasClass('is-open'))
+                {
                     tab = $(this).data('tab');
 
                     $wrapper = $(this).closest('.j-tab-wrapper');
 
-                    $wrapper.find('.j-tab-trigger').removeClass('_current');
-                    $wrapper.find('.j-tab-item').removeClass('_open');
+                    $wrapper.find('.j-tab-trigger').removeClass(' is-current');
+                    $wrapper.find('.j-tab-item').removeClass('is-open');
 
-                    $wrapper.find('#tab-'+tab).addClass('_open');
-                    $(this).addClass('_current');
+                    $wrapper.find('#tab-'+tab).addClass('is-open');
+                    $(this).addClass(' is-current');
                 }
 
                 return !1;

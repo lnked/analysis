@@ -1,0 +1,84 @@
+.objects-table {
+    clear: both;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 30px;
+
+    thead {
+        th {
+            color: $c-black;
+            padding: 15px 10px;
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 1;
+            background-color: #f5f6f8;
+            border-bottom: 1px solid $c-link-water;
+
+            &:first-child {
+                text-align: center;
+            }
+        }
+    }
+
+    tbody {
+        td {
+            color: $c-eclipse;
+            padding: 10px;
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 1;
+            vertical-align: middle;
+            border-bottom: 1px solid $c-link-water;
+
+            &:first-child {
+                text-align: center;
+            }
+        }
+    }
+    
+    &__status {
+        width: 60px;
+        position: relative;
+        z-index: 1;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+
+        &.is-new {
+            height: 24px;
+            color: $c-white;
+            padding: 0 4px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 24px;
+            background-color: $c-alizarin;
+        }
+
+        &.is-updated {
+            height: 24px;
+            background: url(/images/ico/updated.png) 50% 50% no-repeat;
+        }
+
+        &.is-last-update {
+            height: 24px;
+            background: url(/images/ico/last-update.png) 50% 50% no-repeat;
+        }
+    }
+    
+    &__date {
+        color: $c-grey;
+        font-size: 1.1rem;
+        font-weight: 300;
+        position: relative;
+        z-index: 1;
+        line-height: 1.2;
+        display: inline-block;
+        vertical-align: middle;
+
+        .is-big {
+            color: $c-eclipse;
+            font-size: 1.7rem;
+            line-height: 1.06;
+        }
+    }
+}
