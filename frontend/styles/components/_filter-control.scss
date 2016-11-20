@@ -1,0 +1,59 @@
+.filter-control {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    
+    &__header {
+        clear: both;
+        height: 31px;
+        padding: 0 5px;
+        cursor: pointer;
+        overflow: hidden;
+        line-height: 32px;
+        position: relative;
+        background-color: $c-bondi-blue;
+    }
+
+    &__label {
+        color: $c-white;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 0.9;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__remove {
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        cursor: pointer;
+        margin-top: -8px;
+        background: url(/images/ico/remove.png) 50% 50% no-repeat;
+    }
+
+    &__dropdown {
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 11px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        border: 1px solid red;
+        
+        &:before {
+            width: 10px;
+            height: 6px;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background: url(/images/ico/dropdown-arrow.png) 50% 0 no-repeat;
+        }
+    }
+}

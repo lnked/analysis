@@ -1,5 +1,4 @@
 .search {
-    height: 6.4rem;
     font-size: 0;
     position: relative;
     line-height: 64px;
@@ -9,32 +8,117 @@
     &__wrapper {
         @extend %layout;
     }
+
+    &__header {
+        clear: both;
+        height: 64px;
+    }
+
+    &__filter {
+        display: none;
+
+        &__content {
+            text-align: left;
+            padding: 7px 0 40px;
+            border-top: 1px solid $c-link-water;
+        }
+
+        &__title {
+            color: $c-raven;
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 23px;
+        }
+
+        &__control {
+            width: 14.2857142857%;
+            vertical-align: top;
+            margin-bottom: 16px;
+            display: inline-block;
+
+            &:not(:last-child) {
+                padding-right: 5px;
+            }
+        }
+
+        &__footer {
+            font-size: 0;
+            line-height: 1;
+            padding-top: 20px;
+            padding-bottom: 43px;
+            border-top: 1px solid $c-link-water;
+        }
+    }
  
     &__extended {
         color: $c-black;
-        display: inline-block;
         font-size: 1.5rem;
+        line-height: 1;
         font-weight: 300;
         text-align: center;
         position: relative;
         text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__toggle {
+        left: 50%;
+        bottom: 0;
+        margin-left: -57px;
+        z-index: 100;
+
+        &, &:before, &:after {
+            width: 104px;
+            height: 24px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        &:before, &:after {
+            left: 0;
+            content: "";
+            display: block;
+            transition: opacity $a-time;
+            background-repeat: no-repeat;
+            background-image: url(/images/extended.png);
+        }
+
+        &:before {
+            top: 100%;
+            background-position: 50% 100%;
+        }
 
         &:after {
-            width: 108px;
-            height: 25px;
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: 63px;
-            margin-left: -54px;
-            background: url(/images/extended.png) 50% 100% no-repeat;
+            bottom: 0;
+            opacity: 0;
+            background-position: 50% 0;
         }
+    }
+    
+    &.is-open &__toggle {
+        &:before {
+            opacity: 0;
+        }
+
+        &:after {
+            opacity: 1;
+        }
+    }
+
+    &.is-open &__filter {
+        display: block;
+    }
+    
+    &.is-open &__extended {
+        display: none;
     }
 
     &__form {
         float: right;
         position: absolute;
-        right: 0;
+        right: $layout-margin;
         top: 0;
 
         &__control, &__button {
