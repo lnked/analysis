@@ -1,16 +1,47 @@
-.filter-item {
+.filter-list {
+    list-style-type: none;
+    margin-bottom: 5px;
+
+    &__item {
+        color: $c-raven;
+        padding: 8px 7px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.07;
+        text-align: left;
+        user-select: none;
+        border: 2px solid $c-link-water;
+        background-color: $c-solitude;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.filter-add-item {
+    height: 31px;
     color: $c-raven;
-    padding: 8px 7px;
-    cursor: pointer;
     font-size: 1.5rem;
     font-weight: 300;
-    line-height: 1.07;
+    display: block;
+    line-height: 28px;
+    padding-left: 39px;
+    position: relative;
     text-align: left;
-    user-select: none;
+    text-decoration: none;
     border: 2px solid $c-link-water;
     background-color: $c-solitude;
 
-    &:not(:last-child) {
-        margin-bottom: 5px;
+    &:before {
+        width: 31px;
+        height: 31px;
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        border: 2px solid $c-link-water;
+        background: url(/images/ico/add-item.png) 50% 50% no-repeat;
     }
 }
