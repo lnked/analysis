@@ -111,6 +111,8 @@
             clear: both;
             font-size: 0;
             margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $c-link-water;
         }
 
         &__article {
@@ -132,13 +134,17 @@
         }
 
         &__name {
-            color: $c-black;
+            display: block;
             color: $c-eclipse;
             font-size: 1.7rem;
             line-height: 1.2;
             font-weight: 300;
-            padding-top: 10px;
-            border-top: 1px solid $c-link-water;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
 
             strong {
                 font-size: 1.9rem;
