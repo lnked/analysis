@@ -1,0 +1,60 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+
+<div class="layout-wrapper">
+
+    @@include('./components/_header.html', {
+        "current": "index",
+        "navigation": true
+    })
+
+    @@include('./components/_search.html')
+
+    <div class="layout-wrapper__pusher">
+
+        <div class="layout-wrapper__container clearfix">
+
+            <div class="content clearfix">
+
+                <div class="object-item">
+                    <header class="object-item__header">
+                        <span class="object-item__header__status is-updated"></span>
+                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
+                    </header>
+
+                    <a href="" class="object-item__image">
+                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
+                    </a>
+                    
+                    <footer class="object-item__footer">
+                        <div class="object-item__footer__row clearfix">
+                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
+                            <div class="object-item__footer__compare">
+                                @@include('./components/_checkbox.html', {
+                                    "name": "compare",
+                                    "value": "1",
+                                    "attr": "checked",
+                                    "title": "СЛЕДИТЬ",
+                                    "alter": "ОТМЕНА"
+                                })
+                            </div>
+                        </div>
+
+                        <a href="" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
+                    </footer>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

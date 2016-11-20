@@ -35,6 +35,14 @@
             }
         }
     }
+
+    &__name {
+        color: $c-eclipse;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
     
     &__status {
         width: 60px;
