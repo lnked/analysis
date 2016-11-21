@@ -1,0 +1,120 @@
+.object {
+    
+    &__title {
+        color: #393939;
+        font-size: 3.6rem;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $c-link-water;
+    }
+
+    &__row {
+        clear: both;
+        margin-bottom: 55px;
+    }
+
+    &__aside {
+        float: left;
+        width: 321px;
+        margin-right: -321px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__content {
+        width: 100%;
+        float: left;
+        padding-left: 377px;
+    }
+
+    &__map {
+        clear: both;
+    }
+
+    &__logo {
+        font-size: 0;
+        margin-bottom: 17px;
+
+        &__src {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__desc {
+        clear: both;
+        color: $c-eclipse;
+        padding-top: 13px;
+        margin-bottom: 45px;
+
+        &__title {
+            font-size: 2.1rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.67;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+
+        a {
+            color: $c-cerulean;
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+    
+    &__button-list {
+        clear: both;
+
+        &._border {
+            padding-top: 10px;
+            border-top: 1px solid $c-link-water;
+        }
+    }
+    
+    &__contact-persons {
+        clear: both;
+        font-size: 0;
+        margin-bottom: 50px;
+
+        &__item {
+            width: 33.3333333333%;
+            color: $c-eclipse;
+            display: inline-block;
+            vertical-align: top;
+
+            &__post {
+                font-size: 2.1rem;
+                font-weight: 300;
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+
+            &__content {
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.67;
+
+                strong {
+                    font-weight: 500;
+                }
+            }
+
+            a {
+                color: $c-cerulean;
+                outline: none;
+                text-decoration: underline;
+            }
+        }
+    }
+}
