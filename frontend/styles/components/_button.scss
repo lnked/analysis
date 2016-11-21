@@ -23,7 +23,7 @@
     }
     
     &.is-inline {
-        padding: 0 22px;
+        padding: 0 15px;
     }
 
     &.is-border {
@@ -36,6 +36,23 @@
         &:hover {
             color: $c-white;
             background-color: $c-cerulean;
+        }
+    }
+
+    &__ico {
+        padding-left: 45px;
+        padding-right: 15px;
+        display: inline-block;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+
+        &__map {
+            background-image: url(/images/ico/b-map.png);
+        }
+
+        &__note {
+            background-image: url(/images/ico/b-note.png);
         }
     }
 

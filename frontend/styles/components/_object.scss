@@ -1,13 +1,37 @@
 .object {
     
-    &__title {
-        color: #393939;
-        font-size: 3.6rem;
-        font-weight: 300;
-        line-height: 1;
+    &__header {
+        clear: both;
         margin-bottom: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         border-bottom: 1px solid $c-link-water;
+
+        &__title {
+            color: $c-eclipse;
+            font-size: 3.6rem;
+            font-weight: 300;
+            line-height: 44px;
+            float: left;
+            vertical-align: middle;
+        }
+        
+        &__control {
+            width: 44px;
+            height: 44px;
+            float: right;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-color: $c-link-water;
+            
+            &._add {
+                background-image: url(/images/ico/add.png);
+            }
+
+            &._edit {
+                background-image: url(/images/ico/edit.png);
+            }
+        }
     }
 
     &__row {
