@@ -1,0 +1,28 @@
+.sub-header {
+    clear: both;
+    height: 64px;
+    font-size: 0;
+    line-height: 64px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1px;
+    background-color: $c-solitude3;
+
+    &__wrapper {
+        @extend %layout;
+    }
+
+    &__left {
+        float: left;
+        position: absolute;
+        left: $layout-margin;
+        top: 0;
+    }
+
+    &__right {
+        float: right;
+        position: absolute;
+        right: $layout-margin;
+        top: 0;
+    }
+}

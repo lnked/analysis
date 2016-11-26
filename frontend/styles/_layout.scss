@@ -10,6 +10,10 @@
         &._main {
             padding-top: 100px;
         }
+
+        &.is-no-push {
+            padding-top: 0;
+        }
     }
 
     &__container {
@@ -19,8 +23,7 @@
     &__l-bar,
     &__r-bar {
         float: left;
-        min-height: 100px;
-        outline: 1px solid red;
+        min-height: 100%;
     }
 
     &__l-bar {
@@ -28,7 +31,7 @@
         margin-right: -39%;
         position: relative;
         z-index: 1;
-        background-color: $c-solitude;
+        background-color: $c-solitude2;
     }
 
     &__r-bar {

@@ -12,23 +12,23 @@
         "navigation": true
     })
 
-    @@include('./components/_search.html', {
+    @@include('./components/_sub-header.html', {
         "register": true
     })
 
-    <div class="layout-wrapper__pusher clearfix">
+    <div class="layout-wrapper__pusher is-no-push clearfix">
 
         <div class="layout-wrapper__l-bar">
             <div class="layout-wrapper__content">
-                Персональные данные
 
-                отслеживаемые объекты
-
-                Заявка на закрепление к объекту
-
-                Изменение пароля
-
-                Удаление аккаунта
+                <ul class="menu">
+                    <li class="menu__item"><a href="" class="menu__link">Персональные данные</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">отслеживаемые объекты</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Заявка на закрепление к объекту</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Изменение пароля</a></li>
+                    <li class="menu__item"><a href="" class="menu__link is-red">Удаление аккаунта</a></li>
+                </ul>
+                
             </div>
         </div>
 

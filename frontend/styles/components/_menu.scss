@@ -1,0 +1,23 @@
+.menu {
+    clear: both;
+    
+    &__item {
+        clear: both;
+        border-bottom: 1px solid $c-hawkes-blue2;
+    }
+
+    &__link {
+        color: $c-comet;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1;
+        display: block;
+        padding: 20px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &.is-red {
+            color: $c-valencia;
+        }
+    }
+}
