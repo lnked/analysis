@@ -1,0 +1,66 @@
+.participants {
+    clear: both;
+    font-size: 0;
+    margin: 0 -3px;
+
+    &__item {
+        width: 20%;
+        max-width: 234px;
+        padding: 0 3px;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 26px;
+    }
+}
+
+.party {
+    padding: 7px;
+    min-height: 330px;
+    position: relative;
+    background-color: $c-white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    &__image {
+        clear: both;
+        height: 93px;
+        display: block;
+        text-align: center;
+        line-height: 93px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid $c-link-water;
+
+        &__src {
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &__name {
+        color: $c-eclipse;
+        font-size: 2.1rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+    
+    &__content {
+        color: $c-eclipse;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 50px;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+    
+    &__more {
+        clear: both;
+        position: absolute;
+        left: 7px;
+        right: 7px;
+        bottom: 7px;
+    }
+}

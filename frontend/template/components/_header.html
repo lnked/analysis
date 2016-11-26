@@ -14,32 +14,37 @@
 				@@if (typeof navigation !== 'undefined' && navigation == true) {
 				<ul class="navigation__list">
 
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/objects.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
+				    <li class="navigation__item j-submenu" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+				    	<a href="/markup/objects.html" itemprop="url" class="navigation__link is-dropdown@@if (typeof current !== 'undefined' && current == 'objects'){ _current}">
 				    		<span class="navigation__link__name" itemprop="name">ОБЪЕКТЫ</span>
 				    	</a>
 			    	</li>
 
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/participants.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
+				    <li class="navigation__item j-submenu" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+				    	<a href="/markup/participants.html" itemprop="url" class="navigation__link is-dropdown@@if (typeof current !== 'undefined' && current == 'participants'){ _current}">
 				    		<span class="navigation__link__name" itemprop="name">УЧАСТНИКИ</span>
 				    	</a>
 			    	</li>
 
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/map.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
+				    <li class="navigation__item j-submenu" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+				    	<a href="/markup/map.html" itemprop="url" class="navigation__link is-dropdown@@if (typeof current !== 'undefined' && current == 'map'){ _current}">
 				    		<span class="navigation__link__name" itemprop="name">КАРТА</span>
 				    	</a>
+
+				    	<ul class="navigation__item__submenu submenu">
+				    		<li class="submenu__item"><a href="" class="submenu__link">Карта объектов</a></li>
+				    		<li class="submenu__item"><a href="" class="submenu__link">Карта участников</a></li>
+				    	</ul>
 			    	</li>
 
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/forum.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
+				    <li class="navigation__item j-submenu" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+				    	<a href="/markup/forum.html" itemprop="url" class="navigation__link is-dropdown@@if (typeof current !== 'undefined' && current == 'forum'){ _current}">
 				    		<span class="navigation__link__name" itemprop="name">ФОРУМ</span>
 				    	</a>
 			    	</li>
 
-				    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/assistant.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
+				    <li class="navigation__item j-submenu" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+				    	<a href="/markup/assistant.html" itemprop="url" class="navigation__link is-dropdown@@if (typeof current !== 'undefined' && current == 'assistant'){ _current}">
 				    		<span class="navigation__link__name" itemprop="name">ПОМОЩНИК</span>
 				    	</a>
 			    	</li>

@@ -1,7 +1,7 @@
 .navigation {
 
     &__wrapper {
-        padding-left: 320px;
+        padding-left: 305px;
     }
 
     &__list {
@@ -10,34 +10,62 @@
     }
     
     &__item {
+        position: relative;
         display: inline-block;
         vertical-align: middle;
 
         &:not(:last-child) {
-            margin-right: 32px;
+            margin-right: 2px;
+        }
+
+        &__submenu {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            z-index: 1000;
         }
     }
 
     &__link {
         color: $c-hawkes-blue;
+        cursor: pointer;
+        padding: 0 15px;
         font-size: 1.8rem;
         font-weight: 300;
         line-height: 1;
+        line-height: $header-height;
         text-transform: uppercase;
         text-decoration: none;
-        line-height: $header-height;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
 
-        &._current {}    
+        &._current {
+            color: $c-raven;
+            background-color: $c-white;
+        }
+
+        &.is-dropdown {
+            &:after {
+                width: 6px;
+                height: 4px;
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 40px;
+                margin-left: -3px;
+                background: url(/images/ico/dropdown-menu.png) 50% 50% no-repeat;
+                background-size: 6px 4px;
+            }
+        }
+
+        &._current.is-dropdown {
+            &:after {
+                background-image: url(/images/ico/dropdown-menu-active.png);
+            }
+        }
     }
 }
-
-// navigation__list">
-
-// <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-//     <a href="/markup/objects.html" itemprop="url" class="navigation__link@@if (typeof current !== 'undefined' && current == 'index'){ _current}">
-//         <span class="navigation__link__name" itemprop="name">ОБЪЕКТЫ</span>
-//     </a>
-// </li>
 
 @media only screen and (max-width: 868px) {
     .navigation {

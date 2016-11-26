@@ -11,6 +11,7 @@ var app = app || {};
             this.swith.init();
             this.filter.init();
             this.dropdown.init();
+            this.submenu.init();
 
             // this.map.init();
             // this.faq.morph();
