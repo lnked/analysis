@@ -3,20 +3,43 @@
 
     <header class="search__header">
         <div class="search__wrapper">
+            
+            @@if (typeof button_add !== 'undefined' && button_add == true) {
+            <div class="search__left">
+                <a href="" class="button is-dark is-inline">
+                    <span class="button__ico button__ico_add-user">Добавить контактное лицо</span>
+                </a>
+            </div>
+            }
+
+            @@if (typeof extended !== 'undefined' && extended == true) {
             <a href="" class="search__extended j-swith-trigger">Открыть расширенный поиск</a>
+            }
 
-            <form action="" class="search__form clearfix">
-                <div class="search__form__control">
-                    <input type="text" class="search__form__input" placeholder="Введите Ваш запрос">
-                </div>
+            @@if (typeof search !== 'undefined' && search == true) {
+            <div class="search__right">
+                <form action="" class="search__form clearfix">
+                    <div class="search__form__control">
+                        <input type="text" class="search__form__input" placeholder="Введите Ваш запрос">
+                    </div>
 
-                <div class="search__form__button">
-                    <button type="submit" class="button is-wide is-border">поиск</button>
-                </div>
-            </form>
+                    <div class="search__form__button">
+                        <button type="submit" class="button is-wide is-border">поиск</button>
+                    </div>
+                </form>
+            </div>
+            }
+            
+            @@if (typeof register !== 'undefined' && register == true) {
+            <div class="search__right">
+                <a href="" class="button is-inline is-border">регистрация Юридического лица</a>
+            </div>
+            }
+
         </div>
     </header>
 
+    @@if (typeof extended !== 'undefined' && extended == true) {
     <form action="" method="GET" class="search__filter">
         <div class="search__wrapper">
             <section class="search__filter__content">
@@ -190,4 +213,5 @@
             </footer>
         </div>
     </form>
+    }
 </div>

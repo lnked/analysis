@@ -58,7 +58,7 @@
 				<ul class="navigation__list">
 
 				    <li class="navigation__item j-submenu" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-				    	<a href="/markup/objects.html" itemprop="url" class="navigation__link is-dropdown">
+				    	<a href="/markup/objects.html" itemprop="url" class="navigation__link is-dropdown _current">
 				    		<span class="navigation__link__name" itemprop="name">ОБЪЕКТЫ</span>
 				    	</a>
 			    	</li>
@@ -114,10 +114,10 @@
 			</div>
 
 			<div class="dropdown__menu">
-				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
-				<div class="dropdown__item"><a href="" class="dropdown__item__link">Изменить личные данные</a></div>
-				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Сменить пароль</a></div>
-				<div class="dropdown__item"><a href="" class="dropdown__item__link is-red">Удалить аккаунт</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link">Изменить личные данные</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link is-gray">Сменить пароль</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link is-red">Удалить аккаунт</a></div>
 				<div class="dropdown__item">
 					<a href="" class="dropdown__item__link is-gray">
 						<span class="dropdown__item__ico _logout">Выход</span>
@@ -134,20 +134,39 @@
 
     <header class="search__header">
         <div class="search__wrapper">
+            
+            
+            <div class="search__left">
+                <a href="" class="button is-dark is-inline">
+                    <span class="button__ico button__ico_add-user">Добавить контактное лицо</span>
+                </a>
+            </div>
+            
+
+            
             <a href="" class="search__extended j-swith-trigger">Открыть расширенный поиск</a>
+            
 
-            <form action="" class="search__form clearfix">
-                <div class="search__form__control">
-                    <input type="text" class="search__form__input" placeholder="Введите Ваш запрос">
-                </div>
+            
+            <div class="search__right">
+                <form action="" class="search__form clearfix">
+                    <div class="search__form__control">
+                        <input type="text" class="search__form__input" placeholder="Введите Ваш запрос">
+                    </div>
 
-                <div class="search__form__button">
-                    <button type="submit" class="button is-wide is-border">поиск</button>
-                </div>
-            </form>
+                    <div class="search__form__button">
+                        <button type="submit" class="button is-wide is-border">поиск</button>
+                    </div>
+                </form>
+            </div>
+            
+            
+            
+
         </div>
     </header>
 
+    
     <form action="" method="GET" class="search__filter">
         <div class="search__wrapper">
             <section class="search__filter__content">
@@ -321,6 +340,7 @@
             </footer>
         </div>
     </form>
+    
 </div>
 
     <div class="layout-wrapper__pusher">
@@ -362,10 +382,10 @@
 
                             <div class="object__button-list">
                                 <button type="button" class="button is-filled is-inline">
-                                    <span class="button__ico button__ico__map">показать на карте</span>
+                                    <span class="button__ico button__ico_map">показать на карте</span>
                                 </button>
                                 <button type="button" class="button is-filled is-inline">
-                                    <span class="button__ico button__ico__note">добавить заметку</span>
+                                    <span class="button__ico button__ico_note">добавить заметку</span>
                                 </button>
                             </div>
                         </div>

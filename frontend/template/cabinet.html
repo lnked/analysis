@@ -1,0 +1,108 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+
+<div class="layout-wrapper">
+
+    @@include('./components/_header.html', {
+        "current": "cabinet",
+        "navigation": true
+    })
+
+    @@include('./components/_search.html', {
+        "register": true
+    })
+
+    <div class="layout-wrapper__pusher clearfix">
+
+        <div class="layout-wrapper__l-bar">
+            <div class="layout-wrapper__content">
+                Персональные данные
+
+                отслеживаемые объекты
+
+                Заявка на закрепление к объекту
+
+                Изменение пароля
+
+                Удаление аккаунта
+            </div>
+        </div>
+
+        <div class="layout-wrapper__r-bar">
+            <div class="layout-wrapper__content">
+                
+                <h2>Ваши персональные данные</h2>
+
+                <form action="" class="form" method="POST" enctype="multipart/form-data">
+                    
+                    <div class="f-row">
+                        <div class="f-row__title">Фио:</div>
+
+                        <label class="f-label clearfix">
+                            <span class="f-label__name">Фамилия</span>
+                            <span class="f-label__content">
+                                <input type="text" class="f-input" value="Колодцев">
+                            </span>
+                        </label>
+
+                        <label class="f-label clearfix">
+                            <span class="f-label__name">Имя</span>
+                            <span class="f-label__content">
+                                <input type="text" class="f-input" value="Владимир">
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <div class="f-row">
+                        <div class="f-row__title">Контактная информация:</div>
+
+                        <label class="f-label clearfix">
+                            <span class="f-label__name">Телефон</span>
+                            <span class="f-label__content">
+                                <input type="text" class="f-input" value="8 928 402 12-23">
+                            </span>
+                        </label>
+
+                        <label class="f-label clearfix">
+                            <span class="f-label__name">E-mail</span>
+                            <span class="f-label__content">
+                                <input type="text" class="f-input" value="director@alfastroikompleks.ru">
+                            </span>
+                        </label>
+                    </div>
+
+                    <label class="f-label clearfix">
+                        <span class="f-label__name">Фотография аккаунта:</span>
+                        <span class="f-label__content">
+                            <input type="text" class="f-input">
+                        </span>
+                    </label>
+
+                </form>
+
+            </div>
+        </div>
+        
+        <!--
+        <div class="layout-wrapper__container clearfix">
+
+            <div class="content clearfix">
+                
+                <div class="sidebar">
+                    
+                </div>
+            </div>
+            
+        </div>
+        -->
+
+    </div>
+
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

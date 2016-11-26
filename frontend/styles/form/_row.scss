@@ -1,0 +1,12 @@
+.f-row {
+    clear: both;
+    margin-bottom: 39px;
+
+    &__title {
+        color: $c-eclipse;
+        line-height: 1.43;
+        font-size: 2.1rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+}

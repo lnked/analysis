@@ -8,11 +8,15 @@
 <div class="layout-wrapper">
 
     @@include('./components/_header.html', {
-        "current": "index",
+        "current": "objects",
         "navigation": true
     })
 
-    @@include('./components/_search.html')
+    @@include('./components/_search.html', {
+        "button_add": true,
+        "extended": true,
+        "search": true
+    })
 
     <div class="layout-wrapper__pusher">
 
@@ -53,10 +57,10 @@
 
                             <div class="object__button-list">
                                 <button type="button" class="button is-filled is-inline">
-                                    <span class="button__ico button__ico__map">показать на карте</span>
+                                    <span class="button__ico button__ico_map">показать на карте</span>
                                 </button>
                                 <button type="button" class="button is-filled is-inline">
-                                    <span class="button__ico button__ico__note">добавить заметку</span>
+                                    <span class="button__ico button__ico_note">добавить заметку</span>
                                 </button>
                             </div>
                         </div>

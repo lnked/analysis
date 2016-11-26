@@ -1,4 +1,4 @@
-.c-group {
+.f-group {
     font-size: 0;
     vertical-align: top;
     display: inline-block;
@@ -12,7 +12,7 @@
         vertical-align: top;
         display: inline-block;
         border-radius: 1px;
-        border: 1px solid $c-border-color;
+        border: 1px solid $c-border;
         box-sizing: border-box;
 
         &:not(:last-child) {

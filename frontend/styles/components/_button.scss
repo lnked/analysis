@@ -10,7 +10,7 @@
     line-height: 41px;
     font-weight: 300;
     vertical-align: middle;
-
+    
     &.is-wide {
         width: 100%;
         padding: 0;
@@ -38,6 +38,11 @@
             background-color: $c-cerulean;
         }
     }
+    
+    &.is-dark {
+        color: $c-white;
+        background-color: $c-matterhorn;
+    }
 
     &__ico {
         padding-left: 45px;
@@ -47,11 +52,15 @@
         background-repeat: no-repeat;
         background-position: 0 50%;
 
-        &__map {
+        &_map {
             background-image: url(/images/ico/b-map.png);
         }
 
-        &__note {
+        &_add-user {
+            background-image: url(/images/ico/add-user.png);
+        }
+
+        &_note {
             background-image: url(/images/ico/b-note.png);
         }
     }
@@ -71,4 +80,12 @@
 
 .button + .button {
     margin-left: 10px;
+}
+
+a.button {
+    line-height: 44px;
+
+    &.is-border {
+        line-height: 42px;
+    }
 }

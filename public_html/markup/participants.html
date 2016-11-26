@@ -114,10 +114,10 @@
 			</div>
 
 			<div class="dropdown__menu">
-				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
-				<div class="dropdown__item"><a href="" class="dropdown__item__link">Изменить личные данные</a></div>
-				<div class="dropdown__item"><a href="" class="dropdown__item__link is-gray">Сменить пароль</a></div>
-				<div class="dropdown__item"><a href="" class="dropdown__item__link is-red">Удалить аккаунт</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link">Изменить личные данные</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link is-gray">Сменить пароль</a></div>
+				<div class="dropdown__item"><a href="/markup/cabinet.html" class="dropdown__item__link is-red">Удалить аккаунт</a></div>
 				<div class="dropdown__item">
 					<a href="" class="dropdown__item__link is-gray">
 						<span class="dropdown__item__ico _logout">Выход</span>
@@ -134,20 +134,39 @@
 
     <header class="search__header">
         <div class="search__wrapper">
+            
+            
+            <div class="search__left">
+                <a href="" class="button is-dark is-inline">
+                    <span class="button__ico button__ico_add-user">Добавить контактное лицо</span>
+                </a>
+            </div>
+            
+
+            
             <a href="" class="search__extended j-swith-trigger">Открыть расширенный поиск</a>
+            
 
-            <form action="" class="search__form clearfix">
-                <div class="search__form__control">
-                    <input type="text" class="search__form__input" placeholder="Введите Ваш запрос">
-                </div>
+            
+            <div class="search__right">
+                <form action="" class="search__form clearfix">
+                    <div class="search__form__control">
+                        <input type="text" class="search__form__input" placeholder="Введите Ваш запрос">
+                    </div>
 
-                <div class="search__form__button">
-                    <button type="submit" class="button is-wide is-border">поиск</button>
-                </div>
-            </form>
+                    <div class="search__form__button">
+                        <button type="submit" class="button is-wide is-border">поиск</button>
+                    </div>
+                </form>
+            </div>
+            
+            
+            
+
         </div>
     </header>
 
+    
     <form action="" method="GET" class="search__filter">
         <div class="search__wrapper">
             <section class="search__filter__content">
@@ -321,6 +340,7 @@
             </footer>
         </div>
     </form>
+    
 </div>
 
     <div class="layout-wrapper__pusher">
@@ -334,12 +354,13 @@
 
                 <div class="j-tab-wrapper">
                     <ul class="tabs">
-                        <li class="tabs__item"><a href="" data-tab="view-table" class="tabs__item__link j-tab-trigger is-current">Табличный вид</a></li>
-                        <li class="tabs__item"><a href="" data-tab="view-block" class="tabs__item__link j-tab-trigger">Блочный вид</a></li>
+                        <li class="tabs__item"><a href="" data-tab="view-table" class="tabs__item__link j-tab-trigger">Табличный вид</a></li>
+                        <li class="tabs__item"><a href="" data-tab="view-block" class="tabs__item__link j-tab-trigger is-current">Блочный вид</a></li>
                         <li class="tabs__item"><a href="" data-tab="view-map" class="tabs__item__link j-tab-trigger">Расположение на карте</a></li>
                     </ul>
                     
-                    <div class="tabs-content j-tab-item is-open" id="tab-view-table">
+                    <div class="tabs-content j-tab-item is-open" id="tab-view-table"></div>
+                    <div class="tabs-content j-tab-item is-open" id="tab-view-block">
                         
                         <ul class="participants">
                             <li class="participants__item">
@@ -802,693 +823,8 @@
                         
                     </div>
 
-                    <div class="tabs-content j-tab-item" id="tab-view-table">
-                        
-                        <table class="objects-table">
-                            <colgroup>
-                                <col width="80">
-                                <col>
-                                <col width="220">
-                                <col width="130">
-                            </colgroup>
+                    <div class="tabs-content j-tab-item is-open" id="tab-view-map"></div>
 
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Наименование объекта</th>
-                                    <th colspan="2">Статус</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>3458</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Поющие фонтаны» на Гидрострое. Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-new">НОВЫЙ</span>
-                                        <span class="objects-table__date">Добавлен:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3200</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Зеленый парк» в Карасунском округе. Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-new">НОВЫЙ</span>
-                                        <span class="objects-table__date">Добавлен:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3078</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Поющие фонтаны». Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-updated"></span>
-                                        <span class="objects-table__date">Обновлен:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3012</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Поющие фонтаны» на Гидрострое. Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-updated"></span>
-                                        <span class="objects-table__date">Обновлен:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3001</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Зеленый парк» в Карасунском округе. Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-updated"></span>
-                                        <span class="objects-table__date">Обновлен:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2799</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Поющие фонтаны» на Гидрострое. Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-updated"></span>
-                                        <span class="objects-table__date">Обновлен:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2655</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Поющие фонтаны». Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-last-update"></span>
-                                        <span class="objects-table__date">Последнее обновление:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2487</td>
-                                    <td><a href="/markup/object-item.html" class="objects-table__name">ЖК «Зеленый парк» в Карасунском округе. Адрес объекта: Краснодар, ул. Снесарева, 5</a></td>
-                                    <td>
-                                        <span class="objects-table__status is-last-update"></span>
-                                        <span class="objects-table__date">Последнее обновление:<br><span class="is-big">01.05.2016</span></span>
-                                    </td>
-                                    <td>
-                                        <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                    <div class="tabs-content j-tab-item" id="tab-view-block">
-                        
-                        <ul class="objects-list clearfix">
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-updated"></span>
-                                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/2.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/3.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/4.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-last-update"></span>
-                                        <span class="object-item__header__date">Последнее обновление:<br><span class="is-big">21.07.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/5.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-last-update"></span>
-                                        <span class="object-item__header__date">Последнее обновление:<br><span class="is-big">21.07.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-updated"></span>
-                                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-updated"></span>
-                                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" >
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-updated"></span>
-                                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                            
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-updated"></span>
-                                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-new">НОВЫЙ</span>
-                                        <span class="object-item__header__date">Добавлен:<br><span class="is-big">23.05.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-
-                            <li class="objects-list__item">
-                                <div class="object-item">
-                                    <header class="object-item__header">
-                                        <span class="object-item__header__status is-updated"></span>
-                                        <span class="object-item__header__date">Обновлен:<br><span class="is-big">01.04.2016</span></span>
-                                    </header>
-
-                                    <a href="/markup/object-item.html" class="object-item__image">
-                                        <img src="/images/objects/1.jpg" class="object-item__image__src" alt="">
-                                    </a>
-                                    
-                                    <footer class="object-item__footer">
-                                        <div class="object-item__footer__row clearfix">
-                                            <div class="object-item__footer__article"><strong>ID</strong> 3245</div>
-                                            <div class="object-item__footer__compare">
-                                                <label class="f-checkbox clearfix">
-    <input type="checkbox" name="compare" value="1" class="f-checkbox__input" checked>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">СЛЕДИТЬ</span>
-            <span class="f-checkbox__label__middle__alter">ОТМЕНА</span>
-        </span>
-    </span>
-</label>
-                                            </div>
-                                        </div>
-
-                                        <a href="/markup/object-item.html" class="object-item__footer__name"><strong>ЖК «Поющие фонтаны»</strong><br>Адрес объекта: Краснодар, ул. Снесарева, 5</a>
-                                    </footer>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tabs-content j-tab-item" id="tab-view-map"></div>
-                        
                     <div class="next-page">
                         <a href="" class="next-page__link">Следующая страница</a>
                     </div>

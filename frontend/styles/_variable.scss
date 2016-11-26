@@ -10,7 +10,6 @@ $font-arial:                    Arial, Helvetica, sans-serif;
 $font-forms:                    Arial, Helvetica, sans-serif;
 
 // Colors
-$c-border-color:                #eee;
 
 $c-lime:                        lime;
 $c-white:                       #fff;
@@ -32,6 +31,8 @@ $c-eclipse:                     #393939;
 $c-alizarin:                    #e9373e;
 $c-rock-blue:                   #9daabe;
 $c-grey:                        #7c7c7c;
+$c-matterhorn:                  #555555;
+$c-comet:                       #6a6d82;
 
 $c-jordy-blue:                  #7baaf7;
 $c-maya-blue:                   #76b5ff;
@@ -63,6 +64,7 @@ $c-placeholder-opacity:         .5;
 $c-sandwich-overlay:            #000;
 $c-sandwich-background:         #fff;
 $c-sandwich-background-active:  $c-cerulean;
+$c-border:                      $c-hawkes-blue;
 
 // Alerts
 

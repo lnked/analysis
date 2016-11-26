@@ -4,6 +4,7 @@
     height: $header-height;
     background-color: $c-bondi-blue;
     background-image: linear-gradient(to right, $c-bondi-blue 0%, $c-cerulean 100%);
+    // background-image: linear-gradient(270deg, #005aad 0%, #0096ff 100%);
 
     &__wrapper {
         @extend %layout;
