@@ -144,71 +144,75 @@
     <div class="layout-wrapper__pusher is-no-push clearfix">
 
         <div class="layout-wrapper__l-bar">
-            <div class="layout-wrapper__content">
+            <div class="layout-wrapper__l-bar__wrapper">
+                <div class="layout-wrapper__content">
 
-                <ul class="menu">
-                    <li class="menu__item"><a href="" class="menu__link">Персональные данные</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">отслеживаемые объекты</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Заявка на закрепление к объекту</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Изменение пароля</a></li>
-                    <li class="menu__item"><a href="" class="menu__link is-red">Удаление аккаунта</a></li>
-                </ul>
-                
+                    <ul class="menu">
+                        <li class="menu__item"><a href="" class="menu__link">Персональные данные</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">отслеживаемые объекты</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Заявка на закрепление к объекту</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Изменение пароля</a></li>
+                        <li class="menu__item"><a href="" class="menu__link is-red">Удаление аккаунта</a></li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
 
         <div class="layout-wrapper__r-bar">
-            <div class="layout-wrapper__content">
-                
-                <h2>Ваши персональные данные</h2>
-
-                <form action="" class="form" method="POST" enctype="multipart/form-data">
+            <div class="layout-wrapper__r-bar__wrapper">
+                <div class="layout-wrapper__content">
                     
-                    <div class="f-row">
-                        <div class="f-row__title">Фио:</div>
+                    <h2>Ваши персональные данные</h2>
+
+                    <form action="" class="form" method="POST" enctype="multipart/form-data">
+                        
+                        <div class="f-row">
+                            <div class="f-row__title">Фио:</div>
+
+                            <label class="f-label clearfix">
+                                <span class="f-label__name">Фамилия</span>
+                                <span class="f-label__content">
+                                    <input type="text" class="f-input" value="Колодцев">
+                                </span>
+                            </label>
+
+                            <label class="f-label clearfix">
+                                <span class="f-label__name">Имя</span>
+                                <span class="f-label__content">
+                                    <input type="text" class="f-input" value="Владимир">
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <div class="f-row">
+                            <div class="f-row__title">Контактная информация:</div>
+
+                            <label class="f-label clearfix">
+                                <span class="f-label__name">Телефон</span>
+                                <span class="f-label__content">
+                                    <input type="text" class="f-input" value="8 928 402 12-23">
+                                </span>
+                            </label>
+
+                            <label class="f-label clearfix">
+                                <span class="f-label__name">E-mail</span>
+                                <span class="f-label__content">
+                                    <input type="text" class="f-input" value="director@alfastroikompleks.ru">
+                                </span>
+                            </label>
+                        </div>
 
                         <label class="f-label clearfix">
-                            <span class="f-label__name">Фамилия</span>
+                            <span class="f-label__name">Фотография аккаунта:</span>
                             <span class="f-label__content">
-                                <input type="text" class="f-input" value="Колодцев">
+                                <input type="text" class="f-input">
                             </span>
                         </label>
 
-                        <label class="f-label clearfix">
-                            <span class="f-label__name">Имя</span>
-                            <span class="f-label__content">
-                                <input type="text" class="f-input" value="Владимир">
-                            </span>
-                        </label>
-                    </div>
-                    
-                    <div class="f-row">
-                        <div class="f-row__title">Контактная информация:</div>
+                    </form>
 
-                        <label class="f-label clearfix">
-                            <span class="f-label__name">Телефон</span>
-                            <span class="f-label__content">
-                                <input type="text" class="f-input" value="8 928 402 12-23">
-                            </span>
-                        </label>
-
-                        <label class="f-label clearfix">
-                            <span class="f-label__name">E-mail</span>
-                            <span class="f-label__content">
-                                <input type="text" class="f-input" value="director@alfastroikompleks.ru">
-                            </span>
-                        </label>
-                    </div>
-
-                    <label class="f-label clearfix">
-                        <span class="f-label__name">Фотография аккаунта:</span>
-                        <span class="f-label__content">
-                            <input type="text" class="f-input">
-                        </span>
-                    </label>
-
-                </form>
-
+                </div>
             </div>
         </div>
         
