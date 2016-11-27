@@ -9,6 +9,16 @@ var app = app || {};
 
         _geoObject: null,
 
+        isMobile: function()
+        {
+            return ($(window).width() <= 568);
+        },
+
+        isTablet: function()
+        {
+            return ($(window).width() <= 960);
+        },
+
         getData: function($element)
         {
             var x, wrap_id = null, coords = null;
@@ -43,17 +53,28 @@ var app = app || {};
 
         drowMap: function($element)
         {
-            
-            var that = this, data = this.getData($element);
+            var that = this, data = this.getData($element), is_mobile = this.isMobile(), is_tablet = this.isTablet();
 
             this.initSize($element);
 
             ymaps.ready(function(){
 
+                var controls = ['zoomControl', 'typeSelector', 'fullscreenControl'];
+
+                if (is_mobile)
+                {
+                    controls = ['smallMapDefaultSet'];
+                }
+
+                else if (is_tablet)
+                {
+                    controls = ['mediumMapDefaultSet'];
+                }
+
                 that._mapObject = new ymaps.Map(data.id, {
                     center: [data.coords[0], data.coords[1]],
                     zoom: 13,
-                    controls: ['zoomControl', 'searchControl', 'typeSelector', 'fullscreenControl']
+                    controls: controls
                 });
 
                 // "fullscreenControl" - кнопка разворачивания карты на весь экран control.FullscreenControl;
