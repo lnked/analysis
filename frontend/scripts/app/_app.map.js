@@ -9,7 +9,8 @@ var app = app || {};
 
         _geoObject: null,
 
-        getData: function($element) {
+        getData: function($element)
+        {
             var x, wrap_id = null, coords = null;
 
             if ($element.data('coords')) {
@@ -34,9 +35,18 @@ var app = app || {};
             }
         },
 
-        drowMap: function($element) {
+        initSize: function($element)
+        {
+            var height = $(window).height() - 51 - 64 - 40;
+            $element.css('height', height);
+        },
+
+        drowMap: function($element)
+        {
             
             var that = this, data = this.getData($element);
+
+            this.initSize($element);
 
             ymaps.ready(function(){
 
@@ -67,7 +77,7 @@ var app = app || {};
                 that._mapObject.geoObjects
                     .add(new ymaps.Placemark([data.coords[0], data.coords[1]], {}, {
                         preset: 'islands#dotIcon',
-                        iconColor: '#735184'
+                        iconColor: '#ed4543'
                     }))
 
             });

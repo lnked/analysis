@@ -32,13 +32,19 @@
 
         &__link {
             color: $c-cerulean;
+            color: $c-raven;
             font-size: 1.7rem;
             font-weight: 300;
             line-height: 1;
             text-decoration: none;
+            transition: color $a-time;
+            
+            // &.is-gray {
+            //     color: $c-raven;
+            // }
 
-            &.is-gray {
-                color: $c-raven;
+            &:hover {
+                color: $c-cerulean;
             }
 
             &.is-red {
