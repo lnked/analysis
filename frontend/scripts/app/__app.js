@@ -12,11 +12,7 @@ var app = app || {};
             this.filter.init();
             this.dropdown.init();
             this.submenu.init();
-
-            // this.map.init();
-            // this.faq.morph();
-            // this.fixmenu.init();
-            // this.ajaxForm.init();
+            this.autoheight.init();
         }
 
     };
