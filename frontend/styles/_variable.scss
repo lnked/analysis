@@ -61,8 +61,8 @@ $c-select-background:           #ebeef1;
 $c-text-color:                  #121212;
 $c-body-background:             #fff !default;
 
-$c-placeholder-color:           #000;
-$c-placeholder-opacity:         .5;
+$c-placeholder-color:           $c-raven;
+$c-placeholder-opacity:         1;
 
 $c-sandwich-overlay:            #000;
 $c-sandwich-background:         #fff;
