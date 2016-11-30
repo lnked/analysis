@@ -8,29 +8,12 @@
 <div class="layout-wrapper">
 
     @@include('./components/_header.html', {
-        "current": "index"
+        "current": "forum",
+        "navigation": true
     })
 
-    <div class="layout-wrapper__pusher">
-
-        <div class="layout-wrapper__container clearfix">
-
-            @@include('./components/_sidebar.html')
-            
-            <div class="content clearfix">
-                
-                @@include('./components/_breadcrumbs.html', {
-                    "page1": "Главная",
-                    "page2": "",
-                    "page3": ""
-                })
-
-                <h1></h1>
-
-            </div>
-            
-        </div>
-
+    <div class="layout-wrapper__pusher is-no-push">
+        
     </div>
 
 </div>
