@@ -1,7 +1,7 @@
 <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
     @@if (typeof image !== 'undefined' && image !== '') {
     <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="./news-item.html" itemprop="url">
+        <a href="../news-item.html" itemprop="url">
             <img src="../images/@@image" class="news-item__image__src" itemprop="image" alt="">
         </a>
     </figure>
@@ -14,7 +14,7 @@
         
         @@if (typeof title !== 'undefined' && title !== '') {
         <h3 class="news-item__title">
-            <a href="./news-item.html" itemprop="url" class="news-item__title__link">
+            <a href="../news-item.html" itemprop="url" class="news-item__title__link">
                 <span itemprop="name">@@title</span>
             </a>
         </h3>

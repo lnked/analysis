@@ -54,14 +54,14 @@
                 left: 50%;
                 top: 40px;
                 margin-left: -3px;
-                background: url(/images/ico/dropdown-menu.png) 50% 50% no-repeat;
+                background: url(../images/ico/dropdown-menu.png) 50% 50% no-repeat;
                 background-size: 6px 4px;
             }
         }
 
         &._current.is-dropdown {
             &:after {
-                background-image: url(/images/ico/dropdown-menu-active.png);
+                background-image: url(../images/ico/dropdown-menu-active.png);
             }
         }
     }

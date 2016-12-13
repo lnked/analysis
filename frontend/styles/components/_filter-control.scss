@@ -35,7 +35,7 @@
         cursor: pointer;
         margin-top: -8px;
         transition: opacity $a-time ease;
-        background: url(/images/ico/remove.png) 50% 50% no-repeat;
+        background: url(../images/ico/remove.png) 50% 50% no-repeat;
     }
 
     &.is-checked &__remove {
@@ -74,7 +74,7 @@
             position: absolute;
             left: 50%;
             top: 0;
-            background: url(/images/ico/dropdown-arrow.png) 50% 0 no-repeat;
+            background: url(../images/ico/dropdown-arrow.png) 50% 0 no-repeat;
         }
     }
 }
