@@ -1,3 +1,4 @@
+$checkbox-mini-size: 16px;
 $checkbox-size: 24px;
 
 .f-checkbox {
@@ -9,6 +10,11 @@ $checkbox-size: 24px;
     position: relative;
     font-size: 0;
     user-select: none;
+
+    &.is-mini {
+        min-width: $checkbox-mini-size;
+        min-height: $checkbox-mini-size;
+    }
     
     &__input {
         width: 0;
@@ -30,8 +36,8 @@ $checkbox-size: 24px;
         box-sizing: border-box;
         border: 2px solid $c-rock-blue;
         margin-right: -$checkbox-size;
-        transition: border-color $a-time;
-
+        transition: background-color $a-time, border-color $a-time;
+        
         &:before {
             width: 14px;
             height: 9px;
@@ -45,7 +51,24 @@ $checkbox-size: 24px;
             border-style: solid;
             border-width: 0 0 3px 3px;
             transform: rotate(-45deg);
-            transition: opacity $a-time;
+            transition: opacity $a-time, color $a-time;
+        }
+
+        &.is-mini {
+            border-width: 1px;
+            border-color: $c-bondi-blue;
+            width: $checkbox-mini-size;
+            height: $checkbox-mini-size;
+            margin-right: -$checkbox-mini-size;
+
+            &:before {
+                width: 10px;
+                height: 6px;
+                left: 3px;
+                top: 4px;
+                border-width: 0 0 2px 2px;
+                border-color: $c-white;
+            }
         }
     }
 
@@ -60,14 +83,28 @@ $checkbox-size: 24px;
         padding-left: 26px;
         letter-spacing: 0.01ex;
         text-transform: uppercase;
+        
+        &.is-mini {
+            color: $c-raven;
+            padding-left: 21px;
+            font-weight: 300;
+            text-transform: none;
+            line-height: $checkbox-mini-size;
+        }
 
         &__middle {
             padding: 0 5px;
-            line-height: 24px;
+            line-height: $checkbox-size;
             display: inline-block;
             vertical-align: top;
             background-color: $c-rock-blue;
             transition: background-color $a-time;
+            
+            &.is-mini {
+                padding: 0;
+                background-color: rgba(0,0,0,0);
+                line-height: $checkbox-mini-size;
+            }
 
             &__title {
                 display: block;
@@ -81,6 +118,11 @@ $checkbox-size: 24px;
 
     &__input:checked + &__visible {
         border-color: $c-green;
+        
+        &.is-mini {
+            border-color: $c-bondi-blue;
+            background-color: $c-bondi-blue;
+        }
 
         &:before {
             opacity: 1;
@@ -88,8 +130,13 @@ $checkbox-size: 24px;
     }
 
     &__input:checked + &__visible + &__label {
+
         .f-checkbox__label__middle {
             background-color: $c-green;
+
+            &.is-mini {
+                background-color: rgba(0,0,0,0);
+            }
             
             &__title {
                 display: none;

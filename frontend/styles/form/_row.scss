@@ -2,6 +2,14 @@
     clear: both;
     margin-bottom: 39px;
 
+    &._small {
+        margin-bottom: 10px;
+    }
+
+    &._medium {
+        margin-bottom: 15px;
+    }
+
     &__title {
         color: $c-eclipse;
         line-height: 1.43;

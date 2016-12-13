@@ -1,10 +1,15 @@
-<label class="f-checkbox clearfix">
-    <input type="checkbox" name="@@name" value="@@value" class="f-checkbox__input"@@if (typeof(attr) !== 'undefined'){ @@attr}>
-    <span class="f-checkbox__visible" role="checkbox" aria-checked="false" tabindex="0"></span>
-    <span class="f-checkbox__label">
-        <span class="f-checkbox__label__middle">
-            <span class="f-checkbox__label__middle__title">@@title</span>
-            <span class="f-checkbox__label__middle__alter">@@alter</span>
+<label class="f-checkbox clearfix@@if(typeof(classname) !== 'undefined'){ @@classname}">
+    <input type="checkbox" name="@@name" value="@@value" class="f-checkbox__input@@if(typeof(classname) !== 'undefined'){ @@classname}"@@if (typeof(attr) !== 'undefined'){ @@attr}>
+    <span class="f-checkbox__visible@@if(typeof(classname) !== 'undefined'){ @@classname}" role="checkbox" aria-checked="false" tabindex="0"></span>
+    <span class="f-checkbox__label@@if(typeof(classname) !== 'undefined'){ @@classname}">
+        <span class="f-checkbox__label__middle@@if(typeof(classname) !== 'undefined'){ @@classname}">
+            <span class="f-checkbox__label__middle__title@@if(typeof(classname) !== 'undefined'){ @@classname}">@@title</span>
+            @@if (typeof alter !== 'undefined') {
+            <span class="f-checkbox__label__middle__alter@@if(typeof(classname) !== 'undefined'){ @@classname}">@@alter</span>
+            }
+            @@if (typeof alter == 'undefined') {
+            <span class="f-checkbox__label__middle__alter@@if(typeof(classname) !== 'undefined'){ @@classname}">@@title</span>
+            }
         </span>
     </span>
 </label>

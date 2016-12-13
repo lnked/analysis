@@ -17,31 +17,70 @@
 
     &__user {
         color: $c-white;
-        line-height: 48px;
+        height: $header-height;
+        line-height: $header-height;
         position: absolute;
         top: 0;
         right: 85px;
 
         &__name,
         &__item {
+            display: inline-block;
+        }
+
+        &__name,
+        &__item__link {
             font-size: 1.7rem;
             font-weight: 300;
             line-height: 1;
-            display: inline-block;
+        }
+
+        &__name {
             vertical-align: middle;
         }
 
-        &__link {
-            color: $c-white;
-            padding-right: 17px;
-            text-decoration: none;
-            display: inline-block;
-            background: url(/images/ico/arrow-right.png) 100% 50% no-repeat;
-        }
-
         &__item {
+            position: relative;
+            vertical-align: top;
+
             &:not(:first-child) {
-                margin-left: 45px;
+                margin-left: 4px;
+            }
+
+            &__link {
+                color: $c-white;
+                padding: 0 20px;
+                height: $header-height;
+                line-height: $header-height;
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                transition: color $a-time, background-color $a-time;
+            }
+
+            &__ico {
+                padding-right: 17px;
+            }
+
+            &__arrow {
+                width: 7px;
+                height: 10px;
+                color: $c-white;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translate3d(0, -50%, 0);
+                transition: transform $a-time, color $a-time;
+            }
+
+            &.is-animate &__arrow {
+                color: $c-cerulean;
+                transform: translate3d(0, -50%, 0) rotate(90deg);
+            }
+
+            &.is-animate &__link {
+                color: $c-black;
+                background-color: $c-white;
             }
         }
     }

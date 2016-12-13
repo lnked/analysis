@@ -56,9 +56,119 @@
 		</nav>
 		
 		@@if (typeof navigation == 'undefined' || navigation !== true) {
-		<ul class="layout-header__user">
-			<li class="layout-header__user__item"><a href="" class="layout-header__user__link">Войти</a></li>
-			<li class="layout-header__user__item"><a href="" class="layout-header__user__link">Зарегистрироваться</a></li>
+		<ul class="layout-header__user j-dropdown-list">
+			<li class="layout-header__user__item dropdown j-dropdown">
+				<a href="" class="layout-header__user__item__link j-dropdown-trigger">
+					<span class="layout-header__user__item__ico">Войти</span>
+					<svg class="layout-header__user__item__arrow">
+					    <use xlink:href="#arrow"/>
+					</svg>
+				</a>
+
+				<div class="dropdown__form dropdown__hidden">
+					<form action="" method="POST">
+						<div class="f-row _small clearfix">
+							<label class="f-label is-small-margin">
+								<span class="f-label__ico">
+									<svg class="f-label__ico__image" role="image">
+									    <use xlink:href="#avatar"/>
+									</svg>
+								</span>
+								<input type="text" name="login" placeholder="Логин" class="f-input">
+							</label>
+
+							<label class="f-label">
+								<span class="f-label__ico">
+									<svg class="f-label__ico__image" role="image">
+									    <use xlink:href="#lock"/>
+									</svg>
+								</span>
+								<input type="password" name="password" placeholder="Пароль" class="f-input">
+							</label>
+						</div>
+
+						<div class="f-row _medium clearfix">
+							<div class="fr">
+	                        	<a href="" class="dropdown__forgot-link">Напомнить пароль</a>
+	                        </div>
+
+							<div class="fl">
+								@@include('./_checkbox.html', {
+		                            "name": "save",
+		                            "value": "1",
+		                            "classname": "is-mini",
+		                            "attr": "checked",
+		                            "title": "Запомнить"
+		                        })
+	                        </div>
+						</div>
+
+                        <button type="submit" class="button is-wide is-filled">
+                        	<span class="button__text">Вход</span>
+                        </button>
+					</form>
+				</div>
+			</li>
+
+			<li class="layout-header__user__item dropdown j-dropdown">
+				<a href="" class="layout-header__user__item__link j-dropdown-trigger">
+					<span class="layout-header__user__item__ico">Зарегистрироваться</span>
+					<svg class="layout-header__user__item__arrow">
+					    <use xlink:href="#arrow"/>
+					</svg>
+				</a>
+
+				<div class="dropdown__form dropdown__hidden">
+					<form action="" method="POST">
+						<label class="f-label is-small-margin">
+							<span class="f-label__ico">
+								<svg class="f-label__ico__image" role="image">
+								    <use xlink:href="#envelope"/>
+								</svg>
+							</span>
+							<input type="text" name="email" placeholder="E-mail*" class="f-input">
+						</label>
+
+						<label class="f-label is-small-margin">
+							<span class="f-label__ico">
+								<svg class="f-label__ico__image" role="image">
+								    <use xlink:href="#lock"/>
+								</svg>
+							</span>
+							<input type="password" name="password" placeholder="Пароль*" class="f-input">
+						</label>
+
+						<label class="f-label is-small-margin">
+							<span class="f-label__ico">
+								<svg class="f-label__ico__image" role="image">
+								    <use xlink:href="#lock"/>
+								</svg>
+							</span>
+							<input type="password" name="password_confirm" placeholder="Подтверждение пароля*" class="f-input">
+						</label>
+						
+						<div class="f-captcha">
+							<div class="f-captcha__row clearfix">
+								<div class="f-captcha__image">
+									<img src="/images/captcha.png" alt="" class="f-captcha__image__src">
+								</div>
+								
+								<div class="f-captcha__control">
+									<input type="text" name="captcha" class="f-input">
+								</div>
+							</div>
+
+							<div class="f-captcha__comment">
+								<span class="f-star">*</span>Введите текст с картинки
+							</div>
+						</div>
+
+                        <button type="submit" class="button is-wide is-filled">
+                        	<span class="button__text">Зарегистрироваться</span>
+                        </button>
+					</form>
+				</div>
+			</li>
 		</ul>
 		}
 
@@ -75,7 +185,7 @@
 				</span>
 			</div>
 
-			<div class="dropdown__menu">
+			<div class="dropdown__menu dropdown__hidden">
 				<div class="dropdown__item"><a href="/cabinet.html" class="dropdown__item__link is-gray">Вход в личный кабинет</a></div>
 				<div class="dropdown__item"><a href="/cabinet.html" class="dropdown__item__link">Изменить личные данные</a></div>
 				<div class="dropdown__item"><a href="/cabinet.html" class="dropdown__item__link is-gray">Сменить пароль</a></div>

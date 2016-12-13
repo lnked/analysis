@@ -15,24 +15,35 @@
         &__link {
             width: 28px;
             height: 28px;
+            color: $c-raven;
             display: block;
             cursor: pointer;
-            background-repeat: no-repeat;
-            background-image: url(/images/ico/social.png);
-            background-image: url(/images/ico/social.svg);
-            background-size: 210px 28px;
+            transition: color $a-time ease;
 
             &._vk {
-                background-position: -183px 50%;
+                &:hover {
+                    color: #4b74a5;
+                }
             }
 
             &._facebook {
-                background-position: 0 50%;
+                &:hover {
+                    color: #3b5998;
+                }
             }
 
             &._twitter {
-                background-position: -73px 50%;
+                &:hover {
+                    color: #32ccfe;
+                }
             }
+        }
+
+        &__ico {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            vertical-align: middle;
         }
     }
 }

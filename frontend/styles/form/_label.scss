@@ -1,6 +1,7 @@
 .f-label {
     clear: both;
     font-size: 0;
+    line-height: 0;
     display: block;
     position: relative;
 
@@ -24,5 +25,29 @@
         width: 100%;
         float: left;
         padding-left: 320px;
+    }
+
+    &__ico {
+        width: 42px;
+        height: 42px;
+        display: block;
+        color: $c-rock-blue;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        text-align: center;
+        line-height: 42px;
+        background-color: $c-solitude-light;
+
+        &__image {
+            max-width: 15px;
+            max-height: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        & + .f-input {
+            padding-left: 52px;
+        }
     }
 }

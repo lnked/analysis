@@ -12,17 +12,37 @@
         transition: background-color $a-time;
     }
 
-    &__menu {
-        width: 280px;
+    &__hidden {
         position: absolute;
         top: 100%;
         right: 0;
+        min-width: 280px;
+        z-index: 1000;
         display: none;
         opacity: 0;
-        transform: translateY(-10px);
         background-color: $c-white;
+        transform: translateY(-10px);
         box-shadow: 0 1px 3px rgba(65, 84, 114, 0.33);
         transition: transform $a-time, opacity $a-time;
+    }
+
+    &__forgot-link {
+        color: $c-cerulean;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    &__form {
+        line-height: 1;
+        padding: 23px 11px 10px;
     }
 
     &__item {
@@ -67,11 +87,11 @@
         background-color: $c-white;
     }
 
-    &.is-open &__menu {
+    &.is-open &__hidden {
         display: block;
     }
     
-    &.is-animate &__menu {
+    &.is-animate &__hidden {
         opacity: 1;
         transform: translateZ(0) translateY(0);
     }

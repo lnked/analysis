@@ -8,6 +8,7 @@ var app = app || {};
         init: function()
         {
             this.map.init();
+            this.mask.init();
             this.tabs.init();
             this.swith.init();
             this.filter.init();
