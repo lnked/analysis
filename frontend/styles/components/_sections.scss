@@ -22,18 +22,42 @@
             margin-top: 25px;
             position: relative;
             display: inline-block;
-            border: 3px solid #d7dde4;
+            border: 3px solid $c-hawkes-blue;
+            transition: border-color $a-time ease;
 
             &:before, &:after {
-                width: 34px;
-                height: 34px;
                 content: "";
                 position: absolute;
                 left: 50%;
                 top: 50%;
+                background-color: $c-hawkes-blue;
+            }
+
+            &:before {
+                width: 34px;
+                height: 5px;
                 margin-left: -17px;
+                margin-top: -3px;
+            }
+
+            &:after {
+                width: 5px;
+                height: 34px;
+                margin-left: -3px;
                 margin-top: -17px;
-                background: url(/images/ico/plus.png) 50% 50% no-repeat;
+            }
+
+
+            &:before, &:after {
+                transition: background-color $a-time ease;
+            }
+
+            &:hover {
+                border-color: $c-rock-blue;
+
+                &:before, &:after {
+                    background-color: $c-rock-blue;
+                }
             }
         }
     }
@@ -63,6 +87,18 @@
 
         &__count {
             font-size: 2.4rem;
+        }
+
+        &__title, &__count {
+            transition: color $a-time ease;
+        }
+
+        &:hover &__title {
+            color: $c-black;
+        }
+
+        &:hover &__count {
+            color: $c-bondi-blue;
         }
     }
 }

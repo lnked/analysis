@@ -4,7 +4,7 @@
     text-align: center;
     position: relative;
     margin-top: -$footer-height;
-    background-color: $c-link-water;
+    background-color: $c-hawkes-blue;
     
     &__wrapper {
         @extend %layout;
@@ -16,7 +16,7 @@
         font-weight: 300;
         line-height: $footer-height;
     }
-
+    
     &__social {
         margin-top: -13px;
         position: absolute;

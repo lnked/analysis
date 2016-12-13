@@ -13,24 +13,25 @@
         }
 
         &__link {
-            width: 27px;
-            height: 27px;
+            width: 28px;
+            height: 28px;
             display: block;
             cursor: pointer;
             background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: 27px 27px;
+            background-image: url(/images/ico/social.png);
+            background-image: url(/images/ico/social.svg);
+            background-size: 210px 28px;
 
             &._vk {
-                background-image: url(/images/ico/vk.png);
+                background-position: -183px 50%;
             }
 
-            &._fb {
-                background-image: url(/images/ico/facebook.png);
+            &._facebook {
+                background-position: 0 50%;
             }
 
             &._twitter {
-                background-image: url(/images/ico/twitter.png);
+                background-position: -73px 50%;
             }
         }
     }
