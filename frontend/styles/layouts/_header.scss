@@ -23,6 +23,10 @@
         top: 0;
         right: 85px;
 
+        @media (max-width: 768px) {
+            right: 60px;
+        }
+
         &__name,
         &__item {
             display: inline-block;
@@ -43,8 +47,16 @@
             position: relative;
             vertical-align: top;
 
+            @media (max-width: 768px) {
+                width: 51px;
+            }
+
             &:not(:first-child) {
                 margin-left: 4px;
+
+                @media (max-width: 768px) {
+                    margin-left: 10px;
+                }
             }
 
             &__link {
@@ -56,10 +68,38 @@
                 display: inline-block;
                 position: relative;
                 transition: color $a-time, background-color $a-time;
+
+                @media (max-width: 768px) {
+                    padding: 0;
+                    font-size: 0;
+                    display: block;
+                    vertical-align: top;
+                    text-indent: -1000px;
+                }
             }
 
             &__ico {
                 padding-right: 17px;
+                
+                @media (max-width: 768px) {
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                }
+
+                &--enter {
+                    @media (max-width: 768px) {
+                        background-image: url(/images/ico/login.svg);
+                        background-size: 32px 32px;
+                    }
+                }
+
+                &--register {
+                    @media (max-width: 768px) {
+                        background-image: url(/images/ico/register.svg);
+                        background-size: 32px 32px;
+                    }
+                }
             }
 
             &__arrow {
@@ -71,11 +111,19 @@
                 top: 50%;
                 transform: translate3d(0, -50%, 0);
                 transition: transform $a-time, color $a-time;
+
+                @media (max-width: 768px) {
+                    opacity: 0;
+                }
             }
 
             &.is-animate &__arrow {
                 color: $c-cerulean;
                 transform: translate3d(0, -50%, 0) rotate(90deg);
+
+                @media (max-width: 768px) {
+                    opacity: 1;
+                }
             }
 
             &.is-animate &__link {

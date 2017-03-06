@@ -7,6 +7,13 @@
         font-size: 3.5rem;
         font-weight: 300;
         text-transform: uppercase;
+
+        @media (max-width: 480px) {
+            height: 51px;
+            word-spacing: 0;
+            line-height: 51px;
+            letter-spacing: -0.2ex;
+        }
         
         &__blue {
             color: $c-blizzard-blue;
@@ -14,6 +21,22 @@
 
         &__white {
             color: $c-white;
+        }
+
+        &__first-letter {
+            display: inline;
+
+            @media (max-width: 480px) {
+                display: inline-block;
+            }
+        }
+
+        &__last-letter {
+            display: inline;
+
+            @media (max-width: 480px) {
+                display: none;
+            }
         }
     }
 
@@ -24,5 +47,9 @@
         font-weight: 400;
         line-height: 1;
         letter-spacing: 0.06ex;
+
+        @media (max-width: 480px) {
+            display: none;
+        }
     }
 }

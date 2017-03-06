@@ -24,6 +24,32 @@
         transform: translateY(-10px);
         box-shadow: 0 1px 3px rgba(65, 84, 114, 0.33);
         transition: transform $a-time, opacity $a-time;
+
+        @media (max-width: 768px) {
+            left: 50%;
+            right: auto;
+            max-width: 300px;
+            min-width: 300px;
+        }
+
+        &--enter {
+            @media (max-width: 768px) {
+                margin-left: -160px;
+            }
+        }
+
+        &--register {
+            @media (max-width: 768px) {
+                margin-left: -225px;
+            }
+        }
+
+        &--profile {
+            @media (max-width: 768px) {
+                left: auto;
+                right: 0;
+            }
+        }
     }
 
     &__forgot-link {
@@ -58,10 +84,6 @@
             line-height: 1;
             text-decoration: none;
             transition: color $a-time;
-            
-            // &.is-gray {
-            //     color: $c-raven;
-            // }
 
             &:hover {
                 color: $c-cerulean;

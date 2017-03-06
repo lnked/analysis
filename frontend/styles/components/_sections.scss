@@ -4,6 +4,10 @@
     margin-top: 80px;
     text-align: center;
 
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+
     &__item {
         display: inline-block;
         vertical-align: top;
@@ -11,9 +15,23 @@
         &:not(:first-child) {
             margin-left: 20px;
         }
-
+        
         &:not(:last-child) {
             margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            &:not(:last-child),
+            &:not(:first-child) {
+                clear: both;
+                display: block;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
 
         &__add {
@@ -68,8 +86,123 @@
 
         &__ico {
             display: block;
+            min-height: 152px;
             text-align: center;
+            position: relative;
             margin-bottom: 30px;
+
+            &:before, &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-position: 50% 0%;
+                background-repeat: no-repeat;
+                transition: opacity .5s ease-in-out;
+            }
+
+            &:before {
+                opacity: 1;
+            }
+
+            &:after {
+                opacity: 0;
+            }
+            
+            &:hover {
+                &:before {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &--construct {
+                min-width: 146px;
+
+                &:before {
+                    background-image: url(/images/main/construct.svg);
+                }
+                
+                &:after {
+                    background-image: url(/images/main/construct-hover.svg);
+                }
+
+                &:before, &:after {
+                    background-size: 146px 152px;
+                }
+            }
+
+            &--participants {
+                min-width: 99px;
+
+                &:before {
+                    background-image: url(/images/main/participants.svg);
+                }
+                
+                &:after {
+                    background-image: url(/images/main/participants-hover.svg);
+                }
+
+                &:before, &:after {
+                    background-size: 99px 152px;
+                }
+            }
+
+            &--map {
+                min-width: 147px;
+
+                &:before {
+                    background-image: url(/images/main/map.svg);
+                }
+                
+                &:after {
+                    background-image: url(/images/main/map-hover.svg);
+                }
+
+                &:before, &:after {
+                    background-size: 147px 152px;
+                }
+            }
+
+            &--forum {
+                min-width: 163px;
+
+                &:before {
+                    background-image: url(/images/main/forum.svg);
+                }
+                
+                &:after {
+                    background-image: url(/images/main/forum-hover.svg);
+                }
+
+                &:before, &:after {
+                    background-position: 60% 0;
+                    background-size: 163px 152px;
+                }
+            }
+
+            &--assistant {
+                min-width: 128px;
+
+                &:before {
+                    background-image: url(/images/main/assistant.svg);
+                }
+                
+                &:after {
+                    background-image: url(/images/main/assistant-hover.svg);
+                }
+
+                &:before, &:after {
+                    background-position: 43% 0;
+                    background-size: 128px 152px;
+                }
+            }
 
             &__src {
                 display: inline-block;
